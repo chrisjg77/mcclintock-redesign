@@ -8,9 +8,9 @@ module.exports = function(grunt) {
  
         // Metadata.
         meta: {
-            basePath: '../',
-            srcPath: '../scss/',
-            deployPath: '../css/'
+            basePath: '/',
+            srcPath: 'scss/',
+            deployPath: 'css/'
         },
  
         banner: '/*! <%= pkg.name %> - v<%= pkg.version %> - ' +
