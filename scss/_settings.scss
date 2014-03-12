@@ -40,6 +40,8 @@ $header_font_color: darken(#4d4d4d,10%);
 $meta_font_color: lighten(#4d4d4d,40%);
 $teaser_font_color: lighten(#4d4d4d,20%);
 
+$main_nav_link_color: lighten(#4d4d4d,20%);
+
 
 // Components
 // -------------
@@ -53,9 +55,9 @@ $header_tablet_h: 70px;
 $header_desktop_h: 72px;
 
 // -- Site logo/branding
-$brand_sm_size: 240px;
+$brand_sm_size: 220px;
 $brand_md_size: 325px;
-$brand_lg_size: 350px;
+$brand_lg_size: 300px;
 
 // -- Mobile Off-Canvas Menu
 $offcanvas_bg_color: darken(#4d4d4d,18%);

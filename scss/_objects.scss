@@ -5,14 +5,13 @@
 	width: $brand_sm_size;
 	margin: 0 auto;
 	position: relative;
-	left: -5px; // Offset to put in true center
+	// left: -5px; // Offset to put in true center
 	@media screen and (min-width:$break_sm) {
 		width: $brand_md_size;
 	}
 	@media screen and (min-width:$break_lg) {
 		width: $brand_lg_size;
 	}
-
 	img { width: 100%; }
 }
 
@@ -144,17 +143,23 @@
 
 
 // -- Specific class for the main menu button
-.main-nav-handle {
+
+.main-nav-handle-wrap {
 	position: absolute;
 	top: 13px;
 	right: 15px;
-	display: block;
-	opacity: 0.5;
-	@include transition(all,$offcanvas_open_speed,0);
 	@media screen and (min-width: $break_sm) {
 		top: 20px;
 		right: 25px;
 	}
+}
+
+.main-nav-handle {
+	
+	display: block;
+	opacity: 0.5;
+	@include transition(all,$offcanvas_open_speed,0);
+	
 }
 
 .main-nav-handle:hover { opacity: 1; }

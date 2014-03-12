@@ -25,6 +25,10 @@ em {
 	display: block;
 }
 
+sub {
+	font-size: 0.7em;
+}
+
 h1,h2,h3,h4,h5,h6 { 
 	font-family: $sans_font_stack; 
 	font-style: normal;
@@ -37,6 +41,53 @@ h1,h2,h3,h4,h5,h6 {
 h2 { font-size: 2.1em; }
 h3 { font-size: 1.15em; }
 h4 { font-size: 0.95em; }
+
+
+// Main Nav
+// ------------
+nav a {
+	font-family: $sans_font_stack;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.main-nav {
+	width: 50%;
+	float: left;
+}
+
+.main-nav-links {
+	font-size: 0.8em; 
+	margin: 0 auto;
+
+	li { 
+		float: left;
+	}
+	a {
+		color: $main_nav_link_color;
+		display: block;
+		padding: 2.2em 0.75em;
+	}
+}
+
+.main-nav-left { 
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-left: 0.25em;
+	padding-right: $brand_lg_size/2;
+
+	ul { float: right; padding-right: 1em; }
+} 
+
+.main-nav-right { 
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin-right: 0.25em;
+	padding-left: $brand_lg_size/2;
+} 
+
 
 article {
 
@@ -68,6 +119,15 @@ aside { }
 
 .lg-hidden {
 	@media screen and (min-width: $break_lg) {
-		display: none;
+		display: none !important;
+	}
+}
+
+.lg-only-visible {
+	@media screen and (max-width: $break_lg) {
+		display: none !important;
+	}
+	@media screen and (min-width: $break_lg) {
+		display: block !important;
 	}
 }

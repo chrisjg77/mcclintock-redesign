@@ -74,6 +74,7 @@ header {
     .off-canvas {
       width: 350px; } }
 
+nav,
 section,
 aside,
 .col {
@@ -142,6 +143,9 @@ em {
   line-height: 1.3;
   display: block; }
 
+sub {
+  font-size: 0.7em; }
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "Gotham", "Helvetica", sans-serif;
   font-style: normal;
@@ -158,6 +162,42 @@ h3 {
 
 h4 {
   font-size: 0.95em; }
+
+nav a {
+  font-family: "Gotham", "Helvetica", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none; }
+
+.main-nav {
+  width: 50%;
+  float: left; }
+
+.main-nav-links {
+  font-size: 0.8em;
+  margin: 0 auto; }
+  .main-nav-links li {
+    float: left; }
+  .main-nav-links a {
+    color: gray;
+    display: block;
+    padding: 2.2em 0.75em; }
+
+.main-nav-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 0.25em;
+  padding-right: 150px; }
+  .main-nav-left ul {
+    float: right;
+    padding-right: 1em; }
+
+.main-nav-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 0.25em;
+  padding-left: 150px; }
 
 article {
   border-bottom: 1px solid #e6e6e6;
@@ -182,19 +222,25 @@ article > .inner {
 
 @media screen and (min-width: 1025px) {
   .lg-hidden {
-    display: none; } }
+    display: none !important; } }
+
+@media screen and (max-width: 1025px) {
+  .lg-only-visible {
+    display: none !important; } }
+@media screen and (min-width: 1025px) {
+  .lg-only-visible {
+    display: block !important; } }
 
 .site-brand {
-  width: 240px;
+  width: 220px;
   margin: 0 auto;
-  position: relative;
-  left: -5px; }
+  position: relative; }
   @media screen and (min-width: 601px) {
     .site-brand {
       width: 325px; } }
   @media screen and (min-width: 1025px) {
     .site-brand {
-      width: 350px; } }
+      width: 300px; } }
   .site-brand img {
     width: 100%; }
 
@@ -298,10 +344,16 @@ article > .inner {
   background: url("../img/svg/icon-bars.svg") no-repeat center center;
   background-size: 100%; }
 
-.main-nav-handle {
+.main-nav-handle-wrap {
   position: absolute;
   top: 13px;
-  right: 15px;
+  right: 15px; }
+  @media screen and (min-width: 601px) {
+    .main-nav-handle-wrap {
+      top: 20px;
+      right: 25px; } }
+
+.main-nav-handle {
   display: block;
   opacity: 0.5;
   -webkit-transition: all 0.375s;
@@ -314,10 +366,6 @@ article > .inner {
   -ms-transition-delay: 0;
   -o-transition-delay: 0;
   transition-delay: 0; }
-  @media screen and (min-width: 601px) {
-    .main-nav-handle {
-      top: 20px;
-      right: 25px; } }
 
 .main-nav-handle:hover {
   opacity: 1; }
