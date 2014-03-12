@@ -1,8 +1,5 @@
-body {
-	position: relative;
-}
-
-
+// Header
+// ------------------
 header {
 	width: 100%;
 	background: $header_bg_color;
@@ -47,7 +44,6 @@ header {
 
 
 // -- Mobile Off Canvase
-
 .off-canvas {
 	right: 0;
 	width: $offcanvas_xs_w;
@@ -63,6 +59,7 @@ header {
 
 // Content
 // ------------------
+// --------------------
 
 nav,
 section,
@@ -73,15 +70,11 @@ aside,
 	box-sizing: border-box;        
 }
 
+// Wrappers
+// ------------------
+
 #outer-content-wrap {
 	background: $main_body_bg;
-	// padding-top: $header_phone_h;
-	// @media screen and (min-width: $break_sm) {
-	// 	padding-top: $header_tablet_h;
-	// }
-	// @media screen and (min-width: $break_lg) {
-	// 	padding-top: 0;
-	// }
 }
 
 .content-wrap {
@@ -90,6 +83,9 @@ aside,
 	margin: 0 auto;
 }
 
+
+// Articles
+// ------------------
 article {
 
 	border-bottom: $thin_light_border;
@@ -104,53 +100,59 @@ article > .inner {
 	padding: 0 2.5em 0 2em;
 }
 
+// Asides
+// ------------------
+// Asides typically contain the feeds for the respective content, and
+// also the actions/connect block
 aside { }
-.aside-darker { background: $aside_body_bg; }
-
-section {
-
-	width: 100%;
-
+.aside-header {
+	color: $aside_header_font_color;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-shadow: $text-shadow;
+	background: $aside_header_bg;
+	padding: 1.25em $aside_gutter_w 1em;
+	margin: 0;
 }
 
+.aside-header-ligher {
+	background: $aside_header_bg_ligher;
+}
+.aside-darker { background: $aside_body_bg; }
+
+
+// Sections
+// ------------------
+section {
+	width: 100%;
+}
+
+
+
+// Column system
+// -------------------
+// Based on pecentages
 .col {
 	float: left;
 	width: 100%;
 }
 
 @media screen and (min-width: $break_sm) {
-
-	.col-sm-35 {
-		width: 35%;
-	}
-
-	.col-sm-50 {
-		width: 50%;
-	}
-
-	.col-sm-65 {
-		width: 65%;
-	}
-
+	.col-sm-35 { width: 35%; }
+	.col-sm-50 { width: 50%; }
+	.col-sm-65 { width: 65%; }
 }
 
 @media screen and (min-width: $break_md) {
-
-	.col-sm-50 {
-		width: 50%;
-	}
-
-
+	.col-sm-50 { width: 50%; }
 }
 
 @media screen and (min-width: $break_lg) {
-
 	.col-lg-20 { width: 20%; }
 	.col-lg-25 { width: 25%; }
 	.col-lg-30 { width: 30%; }
 
 	.col-lg-50 { width: 50%; }
-
 }
 
 
