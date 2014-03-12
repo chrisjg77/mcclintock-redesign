@@ -60,7 +60,9 @@
 }
 
 
-// Blog Feed
+// Meta Information
+// ---------------------------
+// Includes bylines, dates, comment and share numbers and links
 .meta {
 	color: $meta_font_color;
 	font-size: 0.85em;
@@ -88,9 +90,7 @@
 	margin: 2em 0;
 }
 
-
-// Feed
-
+// Feed (includes blogroll) 
 .feed {
 	border-left: $thin_grey_border;
 	border-right: $thin_grey_border;
@@ -103,10 +103,9 @@
 }
 
 .feed-item .inner {
-	padding: 1em 1em 1em 0.5em;
-	margin: 0 $aside_gutter_w;
+	padding: 1em $aside_gutter_w+0.5em 1.4em $aside_gutter_w;
 	@media screen and (min-width: $break_sm) {
-		border-bottom: $thin_grey_border;
+		border-bottom: $thin_light_border;
 	}
 }
 
@@ -116,7 +115,7 @@
 	font-weight: bold;
 	text-shadow: $text-shadow;
 	background: $aside_header_bg;
-	padding: 1.25em $aside_gutter_w+0.3em 1em;
+	padding: 1.25em $aside_gutter_w 1em;
 	margin: 0;
 }
 
