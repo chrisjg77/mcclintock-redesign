@@ -19,7 +19,6 @@
 
 
 
-
 // Feature graphic and slider
 
 .feature-banner {
@@ -90,3 +89,25 @@
 	border-left: $thin_grey_border;
 	border-right: $thin_grey_border;
 }
+
+
+.aside-header {
+	color: $aside_header_font_color;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-shadow: $text-shadow;
+	background: $aside_header_bg;
+	padding: 1.25em $aside_gutter_w 1em;
+	margin: 0;
+}
+
+.aside-header-ligher {
+	background: $aside_header_bg_ligher;
+}
+
+
+
+
+
+
+
