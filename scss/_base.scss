@@ -1,8 +1,6 @@
 
 html {
-	
 	font-size: $mobile_font_size;
-
 	color: $grey;
 
 	@media screen and (min-width: $break-sm) {
@@ -50,6 +48,9 @@ article {
 article > .inner {
 	padding: 0 2.5em 0 2em;
 }
+
+aside { }
+.aside-darker { background: $aside_body_bg; }
 
 .clearfix:after {
 	content: ".";

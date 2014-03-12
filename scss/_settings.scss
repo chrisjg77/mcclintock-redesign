@@ -1,61 +1,76 @@
 /* Style Guide */
 
 
-
+// Mobile Breakpoints
+// -------------
+// xs = phone, md = regular tablet (iPad 1/2), xl = any desktop (macbook pro 
+//13" or more)
 $break_xs: 321px;
 $break_sm: 601px;
 $break_md: 769px;
 $break_lg: 1025px;
 $break_xl: 1281px;
 
-
+// Font scaling
+// -------------
+// Set in 'html' tag, sets 'em' size
 $main_font_size: 18px;
 $mobile_font_size: 16px;
 
+// Font stacks and styling
+// -------------
 $sans_font_stack: "Gotham","Helvetica",sans-serif;
 $serif_font_stack: "Droid Serif","Georgia",serif;
 
-// Small indent for paragraphs and em
-$font_indent: 0.25em;
-
+$font_indent: 0.25em; // Small indent for paragraphs and em
 $text-shadow: 1px 1px 0px rgba(0,0,0,0.25);
 
-// Colors
 
-// Greys
+// Main Colors
+// -------------
+
+// -- Greys
 $grey: #4d4d4d;
 
-
+// -- Text colors
 $header_font_color: #4d4d4d;
 $meta_font_color: lighten(#4d4d4d,40%);
 $teaser_font_color: lighten(#4d4d4d,20%);
 
 
-
+// Components
+// -------------
+// Components include high level sections such as the body, header, content, aside, etc..
+ 
+// -- Header
 $header_bg_color: #fff;
-
-$aside_header_font_color: #fff;
-$aside_header_bg: lighten(#4d4d4d,45%);
-$aside_header_bg_ligher: lighten(#4d4d4d,55%);
-
-$aside_gutter_w: 0.75em;
-
-$thin_grey_border: 1px solid lighten(#4d4d4d,55%);
-$thin_light_border: 1px solid lighten(#4d4d4d,60%);
-
 
 $header_phone_h: 58px;
 $header_tablet_h: 70px;
 $header_desktop_h: 72px;
 
-// Site logo/branding
-
+// --Site logo/branding
 $brand_sm_size: 240px;
 $brand_md_size: 325px;
 $brand_lg_size: 350px;
 
-// Feature graphic and slider
+// -- Feature graphic and slider settings
 
 $feature_lg_h: 450px;
 $feature_overlay_start: rgba(0,0,0,0.0);
 $feature_overlay_end: rgba(0,0,0,0.55);
+
+// -- Aside
+$aside_header_font_color: #fff;
+$aside_header_bg: lighten(#4d4d4d,45%);
+$aside_header_bg_ligher: lighten(#4d4d4d,53%);
+
+$aside_body_bg: lighten(#4d4d4d,68%);
+
+$aside_gutter_w: 0.75em;
+
+
+$thin_grey_border: 1px solid lighten(#4d4d4d,55%);
+$thin_light_border: 1px solid lighten(#4d4d4d,60%);
+
+

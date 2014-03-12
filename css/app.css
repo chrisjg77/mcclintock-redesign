@@ -158,6 +158,9 @@ article {
 article > .inner {
   padding: 0 2.5em 0 2em; }
 
+.aside-darker {
+  background: #fafafa; }
+
 .clearfix:after {
   content: ".";
   display: block;
@@ -249,4 +252,4 @@ article > .inner {
   margin: 0; }
 
 .aside-header-ligher {
-  background: #d9d9d9; }
+  background: #d4d4d4; }
