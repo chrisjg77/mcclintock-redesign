@@ -1,10 +1,9 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+@import url("http://fonts.googleapis.com/css?family=Alegreya:400,700");
 /* Tom McClintock Webste Resign (Prototype) 
  * Author: Chris Griffith
  * URL: chrisjg77.github.com/mcclintock-redesign
  */
-@import url("../fonts/Gotham-Bold.ttf");
-@import url("../fonts/Gotham-Bold.ttf");
-@import url("http://fonts.googleapis.com/css?family=Alegreya:400,700");
 /* Style Guide */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -42,9 +41,6 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0; }
-
-body {
-  position: relative; }
 
 header {
   width: 100%;
@@ -118,6 +114,18 @@ article {
 article > .inner {
   padding: 0 2.5em 0 2em; }
 
+.aside-header {
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.25);
+  background: silver;
+  padding: 1.25em 1em 1em;
+  margin: 0; }
+
+.aside-header-ligher {
+  background: #d4d4d4; }
+
 .aside-darker {
   background: #fafafa; }
 
@@ -169,7 +177,7 @@ p {
   margin-bottom: 1em; }
 
 em {
-  font-family: "Gotham", "Helvetica", sans-serif;
+  font-family: "Lato", "Helvetica", sans-serif;
   padding-left: 0;
   line-height: 1.3;
   display: block; }
@@ -178,7 +186,7 @@ sub {
   font-size: 0.7em; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Gotham", "Helvetica", sans-serif;
+  font-family: "Lato", "Helvetica", sans-serif;
   font-style: normal;
   font-weight: normal;
   line-height: 1.2;
@@ -195,7 +203,7 @@ h4 {
   font-size: 0.95em; }
 
 nav a {
-  font-family: "Gotham", "Helvetica", sans-serif;
+  font-family: "Lato", "Helvetica", sans-serif;
   text-transform: uppercase;
   text-decoration: none; }
 
@@ -266,13 +274,13 @@ nav a {
   width: 100%;
   position: absolute;
   bottom: 0;
-  background: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.55));
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.55));
   /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(top, transparent, rgba(0, 0, 0, 0.55));
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.55));
   /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(top, transparent, rgba(0, 0, 0, 0.55));
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.55));
   /* For Firefox 3.6 to 15 */
-  background: linear-gradient(top, transparent, rgba(0, 0, 0, 0.55));
+  background: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.55));
   /* Standard syntax */ }
 
 .sliding {
@@ -331,18 +339,6 @@ nav a {
   @media screen and (min-width: 601px) {
     .feed-item .inner {
       border-bottom: 1px solid #e6e6e6; } }
-
-.aside-header {
-  color: white;
-  text-transform: uppercase;
-  font-weight: bold;
-  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.25);
-  background: silver;
-  padding: 1.25em 1em 1em;
-  margin: 0; }
-
-.aside-header-ligher {
-  background: #d4d4d4; }
 
 .icon {
   width: 30px;
