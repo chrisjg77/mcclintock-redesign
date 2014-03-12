@@ -51,14 +51,9 @@ nav a {
 	text-decoration: none;
 }
 
-.main-nav {
-	width: 50%;
-	float: left;
-}
-
 .main-nav-links {
 	font-size: 0.8em; 
-	margin: 0 auto;
+	margin: -$border_top_h auto 0;
 
 	li { 
 		float: left;
@@ -66,45 +61,17 @@ nav a {
 	a {
 		color: $main_nav_link_color;
 		display: block;
-		padding: 2.2em 0.75em;
+		padding: 2em 0.75em;
+		opacity: 0.5;
+		border-top: $border_top_h solid $border_top_inactive;
+		@include transition(opacity,0.5s,0);
+	}
+
+	a:hover {
+		opacity: 1;
+		border-color: $border_top_active;
 	}
 }
-
-.main-nav-left { 
-	position: absolute;
-	top: 0;
-	left: 0;
-	margin-left: 0.25em;
-	padding-right: $brand_lg_size/2;
-
-	ul { float: right; padding-right: 1em; }
-} 
-
-.main-nav-right { 
-	position: absolute;
-	top: 0;
-	right: 0;
-	margin-right: 0.25em;
-	padding-left: $brand_lg_size/2;
-} 
-
-
-article {
-
-	border-bottom: $thin_light_border;
-	padding-top: 1px;
-
-	@media screen and (min-width: $break-sm) {
-		border: none;
-	}
-}
-
-article > .inner {
-	padding: 0 2.5em 0 2em;
-}
-
-aside { }
-.aside-darker { background: $aside_body_bg; }
 
 
 

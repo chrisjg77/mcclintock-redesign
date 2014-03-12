@@ -20,6 +20,34 @@ header {
 	}
 }
 
+
+// Navigation
+// ------------------
+
+// -- Desktop
+.main-nav {
+	position: absolute;
+	top: 0;
+	width: 50%;
+	float: left;
+	border-top: $border_top_h solid $border_top_inactive;
+}
+
+.main-nav-left { 
+	left: 0;
+	padding-right: $brand_lg_size/2;
+
+	ul { float: right; padding-right: 1em; }
+} 
+
+.main-nav-right { 
+	right: 0;
+	padding-left: $brand_lg_size/2;
+} 
+
+
+// -- Mobile Off Canvase
+
 .off-canvas {
 	right: 0;
 	width: $offcanvas_xs_w;
@@ -34,6 +62,8 @@ header {
 }
 
 // Content
+// ------------------
+
 nav,
 section,
 aside,
@@ -59,6 +89,23 @@ aside,
 	display: block;
 	margin: 0 auto;
 }
+
+article {
+
+	border-bottom: $thin_light_border;
+	padding-top: 1px;
+
+	@media screen and (min-width: $break-sm) {
+		border: none;
+	}
+}
+
+article > .inner {
+	padding: 0 2.5em 0 2em;
+}
+
+aside { }
+.aside-darker { background: $aside_body_bg; }
 
 section {
 

@@ -5,6 +5,7 @@
 	width: $brand_sm_size;
 	margin: 0 auto;
 	position: relative;
+	z-index: 10;
 	// left: -5px; // Offset to put in true center
 	@media screen and (min-width:$break_sm) {
 		width: $brand_md_size;
@@ -115,7 +116,7 @@
 	font-weight: bold;
 	text-shadow: $text-shadow;
 	background: $aside_header_bg;
-	padding: 1.25em $aside_gutter_w 1em;
+	padding: 1.25em $aside_gutter_w+0.3em 1em;
 	margin: 0;
 }
 
