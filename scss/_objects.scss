@@ -1,0 +1,92 @@
+
+
+// Site logo/brand
+
+.site-brand {
+	width: $brand_sm_size;
+	margin: 0 auto;
+	position: relative;
+	left: -5px; // Offset to put in true center
+	@media screen and (min-width:$break_sm) {
+		width: $brand_md_size;
+	}
+	@media screen and (min-width:$break_lg) {
+		width: $brand_lg_size;
+	}
+
+	img { width: 100%; }
+}
+
+
+
+
+// Feature graphic and slider
+
+.feature-banner {
+	position: relative;
+	overflow: hidden;
+}
+
+.feature-overlay {
+	height: 150%;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	@include gradient(top,$feature_overlay_start,$feature_overlay_end);
+}
+
+.sliding {
+	width: 100%;
+	position: relative;
+}
+
+.sliding-lg {
+	height: $feature_lg_h;
+}
+
+.slide {
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	background: url('../img/feature-graphic-1.jpg') no-repeat;
+	background-position: center 50%;
+	@media screen and (min-width: $break_lg) {
+		background-attachment: fixed;
+		background-size: 1800px auto;
+		background-position: center -200%;
+	}
+	@media screen and (min-width: $break_lg) {
+		background-size: 2600px auto;
+		background-position: center 170%;
+	}
+
+}
+
+
+
+// Blog and media feed
+
+.meta {
+	color: $meta_font_color;
+	font-size: 0.85em;
+}
+
+.meta-activity {
+	max-width: 175px;
+
+	@media screen and (min-width: $break_sm) {
+		border-bottom: $thin_light_border;
+	}
+	
+}
+
+.teaser {
+	color: $teaser_font_color;
+	margin: 2em 0;
+}
+
+
+.feed {
+	border-left: $thin_grey_border;
+	border-right: $thin_grey_border;
+}

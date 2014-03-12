@@ -1,0 +1,62 @@
+
+html {
+	
+	font-size: $mobile_font_size;
+
+	color: $grey;
+
+	@media screen and (min-width: $break-sm) {
+		font-size: $main_font_size;
+	}
+}
+
+p { 
+	font-family: $serif_font_stack; 
+	font-style: normal;
+	font-weight: 100;
+	line-height: 1.75;
+	padding-left: $font_indent;
+	margin-bottom: 1em;
+}
+
+em {
+	font-family: $sans_font_stack;
+	padding-left: $font_indent;
+	line-height: 1.3;
+	display: block;
+}
+
+h1,h2,h3,h4,h5,h6 { 
+	font-family: $sans_font_stack; 
+	font-style: normal;
+	font-weight: normal;
+	color: $header_font_color;
+	margin: 1.25em 0 0.25em;
+}
+
+h2 { font-size: 2.1em; }
+
+
+
+article {
+
+	border-bottom: $thin_light_border;
+	padding-bottom: 2em;
+
+	@media screen and (min-width: $break-sm) {
+		border: none;
+	}
+}
+
+article > .inner {
+	padding: 0 2.5em 0 2em;
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height:0;
+}

@@ -2,8 +2,52 @@
 
 
 
-$main_font_size: 16px;
+$break_xs: 321px;
+$break_sm: 601px;
+$break_md: 769px;
+$break_lg: 1025px;
+$break_xl: 1281px;
 
+
+$main_font_size: 18px;
+$mobile_font_size: 16px;
 
 $sans_font_stack: "Gotham","Helvetica",sans-serif;
 $serif_font_stack: "Droid Serif","Georgia",serif;
+
+// Small indent for paragraphs and em
+$font_indent: 0.25em;
+
+// Colors
+
+// Greys
+$grey: #4d4d4d;
+
+
+$header_font_color: #4d4d4d;
+$meta_font_color: lighten(#4d4d4d,40%);
+$teaser_font_color: lighten(#4d4d4d,20%);
+
+
+$header_phone_h: 58px;
+$header_tablet_h: 70px;
+$header_desktop_h: 72px;
+
+$header_bg_color: #fff;
+
+
+$thin_grey_border: 1px solid lighten(#4d4d4d,55%);
+$thin_light_border: 1px solid lighten(#4d4d4d,60%);
+
+
+// Site logo/branding
+
+$brand_sm_size: 240px;
+$brand_md_size: 325px;
+$brand_lg_size: 350px;
+
+// Feature graphic and slider
+
+$feature_lg_h: 450px;
+$feature_overlay_start: rgba(0,0,0,0.0);
+$feature_overlay_end: rgba(0,0,0,0.55);

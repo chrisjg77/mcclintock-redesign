@@ -45,3 +45,187 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0; }
+
+header {
+  width: 100%;
+  background: white;
+  height: 58px;
+  border-bottom: 1px solid #d9d9d9;
+  text-align: center;
+  position: fixed;
+  z-index: 999; }
+  @media screen and (min-width: 601px) {
+    header {
+      height: 70px; } }
+  @media screen and (min-width: 1025px) {
+    header {
+      position: relative;
+      height: 72px; } }
+
+section,
+aside,
+.col {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+#outer-content-wrap {
+  padding-top: 58px; }
+  @media screen and (min-width: 601px) {
+    #outer-content-wrap {
+      padding-top: 70px; } }
+  @media screen and (min-width: 1025px) {
+    #outer-content-wrap {
+      padding-top: 0; } }
+
+.content-wrap {
+  max-width: 720px;
+  display: block;
+  margin: 0 auto; }
+
+section {
+  width: 100%; }
+
+.col {
+  float: left;
+  width: 100%; }
+
+@media screen and (min-width: 601px) {
+  .col-sm-35 {
+    width: 35%; }
+
+  .col-sm-50 {
+    width: 50%; }
+
+  .col-sm-65 {
+    width: 65%; } }
+@media screen and (min-width: 769px) {
+  .col-sm-50 {
+    width: 50%; } }
+@media screen and (min-width: 1025px) {
+  .col-lg-25 {
+    width: 25%; }
+
+  .col-lg-50 {
+    width: 50%; } }
+html {
+  font-size: 16px;
+  color: #4d4d4d; }
+  @media screen and (min-width: 601px) {
+    html {
+      font-size: 18px; } }
+
+p {
+  font-family: "Droid Serif", "Georgia", serif;
+  font-style: normal;
+  font-weight: 100;
+  line-height: 1.75;
+  padding-left: 0.25em;
+  margin-bottom: 1em; }
+
+em {
+  font-family: "Gotham", "Helvetica", sans-serif;
+  padding-left: 0.25em;
+  line-height: 1.3;
+  display: block; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Gotham", "Helvetica", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  color: #4d4d4d;
+  margin: 1.25em 0 0.25em; }
+
+h2 {
+  font-size: 2.1em; }
+
+article {
+  border-bottom: 1px solid #e6e6e6;
+  padding-bottom: 2em; }
+  @media screen and (min-width: 601px) {
+    article {
+      border: none; } }
+
+article > .inner {
+  padding: 0 2.5em 0 2em; }
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0; }
+
+.site-brand {
+  width: 240px;
+  margin: 0 auto;
+  position: relative;
+  left: -5px; }
+  @media screen and (min-width: 601px) {
+    .site-brand {
+      width: 325px; } }
+  @media screen and (min-width: 1025px) {
+    .site-brand {
+      width: 350px; } }
+  .site-brand img {
+    width: 100%; }
+
+.feature-banner {
+  position: relative;
+  overflow: hidden; }
+
+.feature-overlay {
+  height: 150%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.55));
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(top, transparent, rgba(0, 0, 0, 0.55));
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(top, transparent, rgba(0, 0, 0, 0.55));
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(top, transparent, rgba(0, 0, 0, 0.55));
+  /* Standard syntax */ }
+
+.sliding {
+  width: 100%;
+  position: relative; }
+
+.sliding-lg {
+  height: 450px; }
+
+.slide {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background: url("../img/feature-graphic-1.jpg") no-repeat;
+  background-position: center 50%; }
+  @media screen and (min-width: 1025px) {
+    .slide {
+      background-attachment: fixed;
+      background-size: 1800px auto;
+      background-position: center -200%; } }
+  @media screen and (min-width: 1025px) {
+    .slide {
+      background-size: 2600px auto;
+      background-position: center 170%; } }
+
+.meta {
+  color: #b3b3b3;
+  font-size: 0.85em; }
+
+.meta-activity {
+  max-width: 175px; }
+  @media screen and (min-width: 601px) {
+    .meta-activity {
+      border-bottom: 1px solid #e6e6e6; } }
+
+.teaser {
+  color: gray;
+  margin: 2em 0; }
+
+.feed {
+  border-left: 1px solid #d9d9d9;
+  border-right: 1px solid #d9d9d9; }
