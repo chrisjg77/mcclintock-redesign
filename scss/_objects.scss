@@ -17,6 +17,7 @@
 }
 
 
+
 // Feature graphic and slider
 .feature-banner {
 	position: relative;
@@ -37,7 +38,7 @@
 }
 
 .sliding-lg {
-	height: $feature_lg_h;
+	height: $feature_lg_h;	
 }
 
 .slide {
@@ -59,11 +60,14 @@
 }
 
 
-
-// Blog and media feed
+// Blog Feed
 .meta {
 	color: $meta_font_color;
 	font-size: 0.85em;
+}
+
+.meta-sm {
+	font-size: 0.75em;
 }
 
 .meta-activity {
@@ -75,17 +79,36 @@
 	
 }
 
+.blog-item:first-child {
+	padding-top: 1em;
+}
+
 .teaser {
 	color: $teaser_font_color;
 	margin: 2em 0;
 }
 
 
-.feed > .inner {
+// Feed
+
+.feed {
 	border-left: $thin_grey_border;
 	border-right: $thin_grey_border;
 }
 
+.feed-item {
+	@media screen and (min-width: $break_sm) {
+		border: none;
+	}
+}
+
+.feed-item .inner {
+	padding: 1em 1em 1em 0.5em;
+	margin: 0 $aside_gutter_w;
+	@media screen and (min-width: $break_sm) {
+		border-bottom: $thin_grey_border;
+	}
+}
 
 .aside-header {
 	color: $aside_header_font_color;
@@ -101,6 +124,40 @@
 	background: $aside_header_bg_ligher;
 }
 
+
+
+// Icons 
+
+.icon {
+	width: $icon_default_size;
+	height: $icon_default_size;
+	background: #333;
+	border: none;
+	font-size: 0;
+	outline: none; // Hide default glow on focus
+}
+
+.icon-bars {
+	background: url("../img/svg/icon-bars.svg") no-repeat center center;
+	background-size: 100%;
+}
+
+
+// -- Specific class for the main menu button
+.main-nav-handle {
+	position: absolute;
+	top: 13px;
+	right: 15px;
+	display: block;
+	opacity: 0.5;
+	@include transition(all,$offcanvas_open_speed,0);
+	@media screen and (min-width: $break_sm) {
+		top: 20px;
+		right: 25px;
+	}
+}
+
+.main-nav-handle:hover { opacity: 1; }
 
 
 

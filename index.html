@@ -11,84 +11,111 @@
 </head>
 <body>
 
-	<header>
+	<nav class='off-canvas'>
 
-		<nav class='main-nav main-nav-left'>
+	</nav>
 
-		</nav>
+	<div class='ui-slide'>
 
-		<div class='site-brand'>
-			<img src='img/mc-site-logo.svg' />
-		</div>
+		<header>
 
-		<nav class='main-nav main-nav-right'>
+			<nav class='main-nav main-nav-left'>
 
-		</nav>
+			</nav>
 
-	</header>
-
-	<div id='outer-content-wrap'>
-
-		<div class='feature-banner sliding sliding-lg'>
-			<div class='feature-overlay'></div>
-			<div class='slide'>
+			<div class='site-brand'>
+				<img src='img/mc-site-logo.svg' />
 			</div>
 
-		</div>
+			<nav class='main-nav main-nav-right'>
 
-		<div class='clearfix'>
+			</nav>
 
-			<div id='main' class='col col-sm-65 col-lg-50'>
+			<button class='icon icon-bars main-nav-handle lg-hidden' id='menuHandle'>Menu</button>
 
-				<div class='content-wrap'>
+		</header>
 
-					<article class='listview'>
-						<div class='inner'>
-							<h2>California Water: It's the Storage</h2>
-							<em class='meta meta-md'>By Tom McClintock on February 26, 2014</em>
-							<div class='teaser'>
-								<p>Two weeks ago, President Obama visited the drought-stricken Central Valley of California.  He announced his administration's response: he wants to spend another billion dollars to study climate change.</p>
-								<p>Here's a bulletin to those who missed the Holocene Epoch.  The planet has been warming - on and off - since the last ice age, when glaciers covered much of North America.  The climate has been changing since the planet formed, often much more abruptly than it has in recent centuries. </p>
+		<div id='outer-content-wrap'>
+
+			<div class='feature-banner sliding sliding-lg'>
+				<div class='feature-overlay'></div>
+				<div class='slide'>
+				</div>
+
+			</div>
+
+			<div class='clearfix'>
+
+				<div id='main' class='col col-sm-65 col-lg-50'>
+
+					<div class='content-wrap'>
+
+						<article class='blog-item'>
+							<div class='inner'>
+								<h2>California Water: It's the Storage</h2>
+								<em class='meta meta-md'>By Tom McClintock on February 26, 2014</em>
+								<div class='teaser'>
+									<p>Two weeks ago, President Obama visited the drought-stricken Central Valley of California.  He announced his administration's response: he wants to spend another billion dollars to study climate change.</p>
+									<p>Here's a bulletin to those who missed the Holocene Epoch.  The planet has been warming - on and off - since the last ice age, when glaciers covered much of North America.  The climate has been changing since the planet formed, often much more abruptly than it has in recent centuries. </p>
+								</div>
+								<em class='meta meta-activity'></em>
 							</div>
-							<em class='meta meta-activity'></em>
+						</article>
+
+						<article class='blog-item'>
+							<div class='inner'>
+								<h2>Sequester We Hardly Knew Ye</h2>
+								<em class='meta meta-md'>By Tom McClintock on December 13, 2013</em>
+								<div class='teaser'>
+									<p>The great irony of the Republican decision to bust the budget sequester is that barely two months ago, congressional roles were reversed.  The Democrats insisted on funding the government according to existing law.  The Republicans sought one simple change: that the individual insurance mandate under Obamacare be delayed for one year.  They were trying to spare the American people the Obamacare disaster that is now unfolding, but to no avail.  The American people sided overwhelmingly with the Democrats on the principle that the government should be funded according to current law without any side issues.</p>
+								</div>
+							<div class='inner'>
+						</article>
+					</div>
+				</div>
+
+				<aside class='col col-sm-35 col-lg-20'>
+					<h3 class='aside-header'>Media</h3>
+					<section class='feed'>
+						<div style='height: 1500px;'>
+
+							<article class='feed-item'>
+								<div class='inner'>
+									<h4>A free market depends on everyone having equal access</h4>
+									<br>
+									<em class='meta meta-sm'>February 27, 2014</em>
+								</div>
+							</article>
+
+							<article class='feed-item'>
+								<div class='inner'>
+									<h4>Administration's treatment of journalists "absolutely chilling"</h4>
+									<br>
+									<em class='meta meta-sm'>February 27, 2014</em>
+								</div>
+							</article>
+
 						</div>
-					</article>
+					</section>
+				</aside>
 
-					<article class='listview'>
-						<div class='inner'>
-							<h2>Sequester We Hardly Knew Ye</h2>
-							<em class='meta meta-md'>By Tom McClintock on December 13, 2013</em>
-							<div class='teaser'>
-								<p>The great irony of the Republican decision to bust the budget sequester is that barely two months ago, congressional roles were reversed.  The Democrats insisted on funding the government according to existing law.  The Republicans sought one simple change: that the individual insurance mandate under Obamacare be delayed for one year.  They were trying to spare the American people the Obamacare disaster that is now unfolding, but to no avail.  The American people sided overwhelmingly with the Democrats on the principle that the government should be funded according to current law without any side issues.</p>
-							</div>
-						<div class='inner'>
-					</article>
-				</div>
+				<aside class='col col-lg-30 aside-darker'>
+					<h3 class='aside-header aside-header-ligher'>Connect With Tom</h3>
+					<div class='inner'>
+						<div style='height: 1500px;'>
+						</div>
+					</div>
+				</aside>
+
 			</div>
-
-			<aside class='col col-sm-35 col-lg-20 feed'>
-				<h3 class='aside-header'>Media</h3>
-				<div class='inner'>
-					<div style='height: 1500px;'>
-					</div>
-				</div>
-			</aside>
-
-			<aside class='col col-lg-30 aside-darker'>
-				<h3 class='aside-header aside-header-ligher'>Connect With Tom</h3>
-				<div class='inner'>
-					<div style='height: 1500px;'>
-					</div>
-				</div>
-			</aside>
 
 		</div>
 
-	</div>
+		<footer>
 
-	<footer>
+		</footer>
 
-	</footer>
+	</div> <!-- ui-slide -->
 
 	<script data-main="js/app" src="js/lib/require/require-2.1.11.min.js"></script>
 

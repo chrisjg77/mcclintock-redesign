@@ -1,0 +1,27 @@
+
+
+// Mobile menu opening
+.ui-slide {
+	width: 100%;
+	position: relative;
+	z-index: 10;
+	@include transition(margin,$offcanvas_open_speed,0);
+}
+
+
+.menuOpen {
+
+	.ui-slide {
+		margin-left: -$offcanvas_xs_w;
+		@media screen and (min-width: $break_sm) {
+			margin-left: -$offcanvas_sm_w;
+		}
+	}
+
+	.main-nav-handle {
+		-webkit-transform: rotate(-90deg);
+		-moz-transform: rotate(-90deg);
+		transform: rotate(-90deg);
+	}
+	
+}

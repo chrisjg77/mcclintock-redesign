@@ -29,17 +29,19 @@ h1,h2,h3,h4,h5,h6 {
 	font-family: $sans_font_stack; 
 	font-style: normal;
 	font-weight: normal;
+	line-height: 1.2;
 	color: $header_font_color;
-	margin: 1.25em 0 0.25em;
+	margin: 0.75em 0 0.25em;
 }
 
 h2 { font-size: 2.1em; }
 h3 { font-size: 1.15em; }
+h4 { font-size: 0.95em; }
 
 article {
 
 	border-bottom: $thin_light_border;
-	padding-bottom: 2em;
+	padding-top: 1px;
 
 	@media screen and (min-width: $break-sm) {
 		border: none;
@@ -53,6 +55,8 @@ article > .inner {
 aside { }
 .aside-darker { background: $aside_body_bg; }
 
+
+
 .clearfix:after {
 	content: ".";
 	display: block;
@@ -60,4 +64,10 @@ aside { }
 	visibility: hidden;
 	line-height: 0;
 	height:0;
+}
+
+.lg-hidden {
+	@media screen and (min-width: $break_lg) {
+		display: none;
+	}
 }

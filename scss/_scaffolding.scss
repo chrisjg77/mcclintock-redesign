@@ -1,3 +1,8 @@
+body {
+	position: relative;
+}
+
+
 header {
 	width: 100%;
 	background: $header_bg_color;
@@ -15,7 +20,18 @@ header {
 	}
 }
 
-
+.off-canvas {
+	right: 0;
+	width: $offcanvas_xs_w;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	background: $offcanvas_bg_color;
+	z-index: 1;
+	@media screen and (min-width: $break_sm) {
+		width: $offcanvas_sm_w;
+	}
+}
 
 // Content
 section,
@@ -27,13 +43,14 @@ aside,
 }
 
 #outer-content-wrap {
-	padding-top: $header_phone_h;
-	@media screen and (min-width: $break_sm) {
-		padding-top: $header_tablet_h;
-	}
-	@media screen and (min-width: $break_lg) {
-		padding-top: 0;
-	}
+	background: $main_body_bg;
+	// padding-top: $header_phone_h;
+	// @media screen and (min-width: $break_sm) {
+	// 	padding-top: $header_tablet_h;
+	// }
+	// @media screen and (min-width: $break_lg) {
+	// 	padding-top: 0;
+	// }
 }
 
 .content-wrap {

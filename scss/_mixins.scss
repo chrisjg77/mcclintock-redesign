@@ -6,3 +6,16 @@
 	background: -moz-linear-gradient($start,$from,$to); /* For Firefox 3.6 to 15 */
 	background: linear-gradient($start,$from,$to); /* Standard syntax */
 }
+
+@mixin transition($sel,$dur,$delay) {
+	-webkit-transition: $sel $dur;
+	-moz-transition: $sel $dur;
+	-ms-transition: $sel $dur;
+	-o-transition: $sel $dur;
+	transition: $sel $dur;
+	-webkit-transition-delay: $delay;
+	-moz-transition-delay: $delay;
+	-ms-transition-delay: $delay;
+	-o-transition-delay: $delay;
+	transition-delay: $delay;
+}
