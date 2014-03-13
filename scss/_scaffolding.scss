@@ -12,7 +12,7 @@ header {
 	border-bottom: $thin_grey_border;
 	text-align: center;
 	position: fixed;
-	z-index: 999;
+	z-index: 100;
 	@media screen and (min-width: $break_sm) {
 		height: $header_tablet_h;
 	}
@@ -82,10 +82,19 @@ aside,
 	background: $main_body_bg;
 }
 
-.content-wrap {
-	max-width: 750px;
+.wrap {
 	display: block;
 	margin: 0 auto;
+}
+
+.inner-wrap-full {
+	max-width: $max-body-width;
+}
+
+.inner-wrap-content { max-width: 800px; }
+
+.inner-wrap-teaser {
+	max-width: 750px;
 }
 
 

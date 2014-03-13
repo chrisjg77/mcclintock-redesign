@@ -42,7 +42,7 @@ $header_font_color: darken(#4d4d4d,10%);
 $meta_font_color: lighten(#4d4d4d,40%);
 $teaser_font_color: lighten(#4d4d4d,20%);
 
-$main_nav_link_color: lighten(#4d4d4d,10%);
+$main_nav_link_color: darken(#4d4d4d,5%);
 $body_link_color: #3c80af;
 
 $audio_tag_color: #245277;
@@ -53,6 +53,9 @@ $video_tag_color: #bc4b4b;
 // -------------
 // Components include high level sections such as the body, header, content, aside, etc..
  
+// -- Wrappers
+$max-body-width: 1280px;
+
 // -- Header
 $header_bg_color: #fff;
 
@@ -63,7 +66,7 @@ $header_desktop_h: 72px;
 // -- Site logo/branding
 $brand_sm_size: 220px;
 $brand_md_size: 325px;
-$brand_lg_size: 300px;
+$brand_lg_size: 350px;
 
 // -- Desktop Navigation
 $border_top_h: 4px;
@@ -78,7 +81,14 @@ $offcanvas_sm_w: 350px;
 // -- Feature graphic and slider settings
 $feature_lg_h: 450px;
 $feature_overlay_start: rgba(0,0,0,0.0);
-$feature_overlay_end: rgba(0,0,0,0.45);
+$feature_overlay_end: rgba(0,0,0,0.85);
+
+$post_banner_h: 500px;
+
+
+// -- Post Content
+$post-header-padding: 1.75em;
+$post-content-padding: 2em;
 
 // -- Aside
 $aside_header_font_color: #fff;

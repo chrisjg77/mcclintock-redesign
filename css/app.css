@@ -48,7 +48,7 @@ header {
   border-bottom: 1px solid #e6e6e6;
   text-align: center;
   position: fixed;
-  z-index: 999; }
+  z-index: 100; }
   @media screen and (min-width: 601px) {
     header {
       height: 70px; } }
@@ -66,14 +66,14 @@ header {
 
 .main-nav-left {
   left: 0;
-  padding-right: 150px; }
+  padding-right: 175px; }
   .main-nav-left ul {
     float: right;
     padding-right: 1em; }
 
 .main-nav-right {
   right: 0;
-  padding-left: 150px; }
+  padding-left: 175px; }
 
 .off-canvas {
   right: 0;
@@ -98,10 +98,18 @@ aside,
 #outer-content-wrap {
   background: white; }
 
-.content-wrap {
-  max-width: 750px;
+.wrap {
   display: block;
   margin: 0 auto; }
+
+.inner-wrap-full {
+  max-width: 1280px; }
+
+.inner-wrap-content {
+  max-width: 800px; }
+
+.inner-wrap-teaser {
+  max-width: 750px; }
 
 article {
   border-bottom: 1px solid #ebebeb;
@@ -203,6 +211,9 @@ h1, h2, h3, h4, h5, h6 {
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   color: #343434; }
 
+h1 {
+  font-size: 3em; }
+
 h2 {
   font-size: 2.1em; }
 
@@ -220,11 +231,13 @@ nav a {
 
 .main-nav-links {
   font-size: 0.8em;
-  margin: -4px auto 0; }
+  margin: -4px auto 0;
+  position: relative;
+  z-index: 102; }
   .main-nav-links li {
     float: left; }
   .main-nav-links a {
-    color: #676767;
+    color: #404040;
     display: block;
     padding: 2em 0.75em;
     opacity: 0.5;
@@ -239,7 +252,9 @@ nav a {
     -ms-transition-delay: 0;
     -o-transition-delay: 0;
     transition-delay: 0; }
-  .main-nav-links a:hover {
+  .main-nav-links a:hover,
+  .main-nav-links a:focus,
+  .main-nav-links a.active {
     opacity: 1;
     border-color: gray;
     text-decoration: none; }
@@ -254,6 +269,10 @@ nav a {
 
 @media screen and (min-width: 1025px) {
   .lg-hidden {
+    display: none !important; } }
+
+@media screen and (min-width: 1025px) {
+  .lg-only-hidden {
     display: none !important; } }
 
 @media screen and (max-width: 1025px) {
@@ -273,26 +292,33 @@ nav a {
       width: 325px; } }
   @media screen and (min-width: 1025px) {
     .site-brand {
-      width: 300px; } }
+      width: 350px; } }
   .site-brand img {
     width: 100%; }
 
+.site-brand-wrap {
+  width: 100%;
+  position: absolute;
+  z-index: 101;
+  text-align: center; }
+
 .feature-banner {
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  background: #333; }
 
 .feature-overlay {
-  height: 50%;
+  height: 90%;
   width: 100%;
   position: absolute;
   bottom: 0;
-  background: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.45));
+  background: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.85));
   /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(top, transparent, rgba(0, 0, 0, 0.45));
+  background: -o-linear-gradient(top, transparent, rgba(0, 0, 0, 0.85));
   /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(top, transparent, rgba(0, 0, 0, 0.45));
+  background: -moz-linear-gradient(top, transparent, rgba(0, 0, 0, 0.85));
   /* For Firefox 3.6 to 15 */
-  background: linear-gradient(top, transparent, rgba(0, 0, 0, 0.45));
+  background: linear-gradient(top, transparent, rgba(0, 0, 0, 0.85));
   /* Standard syntax */ }
 
 .sliding {
@@ -302,6 +328,9 @@ nav a {
 .sliding-lg {
   height: 450px; }
 
+.post-banner {
+  height: 500px; }
+
 .slide {
   height: 100%;
   width: 100%;
@@ -310,13 +339,7 @@ nav a {
   background-position: center 50%; }
   @media screen and (min-width: 1025px) {
     .slide {
-      background-attachment: fixed;
-      background-size: 1800px auto;
-      background-position: center -200%; } }
-  @media screen and (min-width: 1025px) {
-    .slide {
-      background-size: 2400px auto;
-      background-position: center 130%; } }
+      background-size: 1800px auto; } }
 
 .meta {
   color: #b3b3b3;
@@ -411,11 +434,11 @@ nav a {
   right: 15px; }
   @media screen and (min-width: 601px) {
     .main-nav-handle-wrap {
-      top: 25px;
+      top: 22px;
       right: 25px; } }
 
 .main-nav-handle {
-  display: block;
+  display: inline-block;
   opacity: 0.5;
   -webkit-transition: all 0.375s;
   -moz-transition: all 0.375s;
@@ -430,6 +453,54 @@ nav a {
 
 .main-nav-handle:hover {
   opacity: 1; }
+
+.main-share-links {
+  position: absolute;
+  font-size: 25px;
+  top: 15px;
+  left: 15px;
+  opacity: 0;
+  -webkit-transition: all 0.175s;
+  -moz-transition: all 0.175s;
+  -ms-transition: all 0.175s;
+  -o-transition: all 0.175s;
+  transition: all 0.175s;
+  -webkit-transition-delay: 0;
+  -moz-transition-delay: 0;
+  -ms-transition-delay: 0;
+  -o-transition-delay: 0;
+  transition-delay: 0; }
+  .main-share-links a {
+    color: #404040; }
+  .main-share-links i {
+    margin: 0 0.5em; }
+  @media screen and (min-width: 601px) {
+    .main-share-links {
+      top: 22px;
+      left: 25px; } }
+
+.post-title-wrap {
+  position: absolute;
+  margin: 0 1.75em;
+  bottom: 2.75em; }
+
+.post-title {
+  color: #fff; }
+  @media screen and (max-width: 601px) {
+    .post-title {
+      font-size: 2em; } }
+
+.post-meta {
+  font-size: 1em;
+  color: #d9d9d9; }
+  @media screen and (min-width: 1025px) {
+    .post-meta {
+      padding-left: 0.5em; } }
+
+.post-content {
+  margin-top: 2em;
+  padding-right: 2em;
+  padding-bottom: 2em; }
 
 .ui-slide {
   width: 100%;
@@ -455,3 +526,6 @@ nav a {
   -webkit-transform: rotate(-90deg);
   -moz-transform: rotate(-90deg);
   transform: rotate(-90deg); }
+
+.showHeaderShare .main-share-links {
+  opacity: 1; }

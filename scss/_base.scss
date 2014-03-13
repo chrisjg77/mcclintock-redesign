@@ -53,7 +53,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { color: $header_font_color; }
-
+h1 { font-size: 3em; }
 h2 { font-size: 2.1em; }
 h3 { font-size: 1.05em; }
 h4 { font-size: 0.95em; margin-bottom: 0.5em; }
@@ -70,6 +70,8 @@ nav a {
 .main-nav-links {
 	font-size: 0.8em; 
 	margin: -$border_top_h auto 0;
+	position: relative;
+	z-index: 102;
 
 	li { 
 		float: left;
@@ -83,7 +85,9 @@ nav a {
 		@include transition(opacity,0.5s,0);
 	}
 
-	a:hover {
+	a:hover,
+	a:focus,
+	a.active {
 		opacity: 1;
 		border-color: $border_top_active;
 		text-decoration: none;
@@ -102,6 +106,12 @@ nav a {
 }
 
 .lg-hidden {
+	@media screen and (min-width: $break_lg) {
+		display: none !important;
+	}
+}
+
+.lg-only-hidden {
 	@media screen and (min-width: $break_lg) {
 		display: none !important;
 	}

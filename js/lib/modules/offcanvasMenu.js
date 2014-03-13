@@ -20,5 +20,14 @@ define(['jquery'],function( $ ) {
 			body.removeClass('menuOpen');
 		}
 	});
+
+	$(window).on('scroll',function() {
+		if ( $(this).scrollTop() > 150 ) {
+			body.addClass('showHeaderShare');
+		}
+		else {
+			body.removeClass('showHeaderShare');
+		}
+	});
 	
 });
