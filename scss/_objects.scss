@@ -32,6 +32,13 @@
 	position: relative;
 	overflow: hidden;
 	background: #333;
+	padding-top: $header_phone_h;
+	@media screen and (min-width: $break_sm) {
+		padding-top: $header_tablet_h;
+	}
+	@media screen and (min-width: $break_lg) {
+		padding-top: 0;
+	}
 }
 
 .feature-overlay {
@@ -53,6 +60,16 @@
 
 .post-banner {
 	height: $post_banner_h;
+}
+
+.map-box {
+	height: $map_phone_h;
+	@media screen and (min-width: $break_sm) {
+		height: $map_tablet_h;
+	}
+	@media screen and (min-width: $break_lg) {
+		height: $map_desktop_h;
+	}
 }
 
 .slide {
@@ -90,7 +107,6 @@
 	a { color: $meta_font_color; }
 	i { font-size: 1.2em; }
 	span { margin: 0 1em 0 0.5em; }
-	
 }
 
 // Blog Post List
@@ -256,7 +272,6 @@
 		font-size: 2em;
 	}
 }
-
 .post-meta {
 	font-size: 1em;
 	color: darken(#ffffff,15%);
@@ -264,7 +279,6 @@
 		padding-left: 0.5em;
 	}
 }
-
 .post-content {
 	margin-top: 2em;
 	padding-bottom: 2em;
@@ -273,7 +287,6 @@
 		margin-left: $post_content_padding_left;
 	}
 }
-
 .post-activity {
 	position: fixed;
 	margin-top: 4em;

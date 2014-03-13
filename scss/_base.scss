@@ -119,7 +119,31 @@ nav a {
 	}
 }
 
+// Content
+// ------------------
+// --------------------
 
+nav,
+section,
+aside,
+.col {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;    
+	box-sizing: border-box;        
+}
+
+#main {
+	background: $main_body_bg;
+	min-height: 500px;
+}
+
+.content-darker { background: $content_body_darker_bg; }
+
+.section-header { text-transform: uppercase; font-weight: bold; margin-bottom: 2em; }
+.section-content { font-family: $sans_font_stack; }
+
+
+.text-center { text-align: center; }
 
 .clearfix:after {
 	content: ".";

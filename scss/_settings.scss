@@ -36,6 +36,7 @@ $grey: #4d4d4d;
 
 // -- Default colors
 $main_body_bg: #fff;
+$content_body_darker_bg: lighten(#4d4d4d,68%);
 
 // -- Text colors
 $header_font_color: darken(#4d4d4d,10%);
@@ -90,6 +91,10 @@ $feature_overlay_end: rgba(0,0,0,0.85);
 
 $post_banner_h: 500px;
 
+// -- Sign Map
+$map_phone_h :400px;
+$map_tablet_h :500px;
+$map_desktop_h :600px;
 
 // -- Post Content
 $post_header_padding_left: 3.75em;

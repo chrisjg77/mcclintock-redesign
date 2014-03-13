@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang='en-US'>
+<head>
+
+<title>Tom McClintock for Congress</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+<link rel='stylesheet' href='css/app.css' type='text/css'>
+
+<!-- Fontawesome: For prototyping only -->
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+
+<script id='media-list' type='text/x-handlebars-template'>
+{{#media}}
+<article class='feed-item'>
+	<div class='inner'>
+		<div class='tag tag-{{type}}'>
+			<i class="fa {{icon}}"></i>
+			<a href='#'>{{type}}</a>
+		</div>
+		<h4><a href='#'>{{title}}</a></h4>
+		<em class='meta meta-sm'>{{date}}</em>
+	</div>
+</article>
+{{/media}}
+</script>
+
+
+</head>
+<body>
+
+	<nav class='off-canvas'>
+
+	</nav>
+
+	<div class='ui-slide'>
+
+		<header>
+			<nav class='main-nav main-nav-left lg-only-visible'>
+				<ul class='main-nav-links'>
+					<li><a href='#'>Meet Tom</a></li>
+					<li><a href='#'>Issues</a></li>
+					<li><a class='active' href='sign-with-tom.html'>Join</a></li>
+					<li><a href='#'>4<sub>th</sub> District</a></li>
+				</ul>
+			</nav>
+			<div class='site-brand'>
+				<a href='index.html'><img src='img/mc-site-logo.png' /></a>
+			</div>
+			<nav class='main-nav main-nav-right lg-only-visible'>
+				<ul class='main-nav-links'>
+					<li><a href='blog.html'>Blog</a></li>
+					<li><a href='#'>Media</a></li>
+					<li><a href='#'>Contact</a></li>
+					<li><a href='#'>Contribute</a></li>
+				</ul>
+			</nav>
+			<div class='main-nav-handle-wrap'>
+				<button class='icon icon-bars main-nav-handle lg-hidden' id='menuHandle'>Menu</button>
+			</div>
+		</header>
+
+		<div id='outer-content-wrap'>
+
+			<div class='feature-banner map-box' id='map'>
+				<!-- Placeholder for map, will use Javascript API from mapbox -->
+				<iframe width='100%' height='100%' frameBorder='0' src='http://a.tiles.mapbox.com/v3/chrisjg77.hgolne95/attribution,zoompan,geocoder,share.html'></iframe>
+
+			</div>
+
+			<div class='clearfix'>
+
+				<div id='main'>
+					<section class='sign-stats-wrap'>
+						<div class='wrap inner-wrap-content'>
+							<div class='table text-center'>
+
+								<div class='table-col sign-stat'>
+									<em class='count-lg'>1,574,690</em>
+									<em class='meta'>Signers</em>
+								</div>
+
+								<div class='table-col sign-stat'>
+									<em class='count-lg'>278,001</em>
+									<em class='meta'>Donors</em>
+								</div>
+
+								<div class='table-col sign-stat'>
+									<em class='count-lg'>$1,574,690</em>
+									<em class='meta'>Raised</em>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<section class='content-darker sign-description' style='height: 500px;'>
+						<div class='wrap inner-wrap-content text-center'>
+
+								<h3 class='section-header'>Sign With Tom</h3>
+								<p class='section-content'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sagittis massa ante, eu viverra mauris lobortis aliquam. Nunc dictum, lorem nec ultrices adipiscing, nulla justo cursus lectus, eu tempor metus erat sit amet nisi. Mauris dui risus, dictum ut nibh at, aliquet ornare quam. Sed mattis erat tellus, sed ornare augue laoreet id. Maecenas tempor diam euismod mauris luctus, ut venenatis lacus luctus. Donec a dui quis justo eleifend luctus nec sit amet urna. Integer urna sem, porta viverra dignissim vitae, scelerisque at turpis. </p>
+
+						</div>
+					</section>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<footer>
+
+		</footer>
+
+	</div> <!-- ui-slide -->
+
+	<script data-main="js/app" src="js/lib/require/require-2.1.11.min.js"></script>
+
+</body>
+</html>

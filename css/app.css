@@ -87,14 +87,6 @@ header {
     .off-canvas {
       width: 350px; } }
 
-nav,
-section,
-aside,
-.col {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-
 #outer-content-wrap {
   background: white; }
 
@@ -106,7 +98,7 @@ aside,
   max-width: 1280px; }
 
 .inner-wrap-content {
-  max-width: 800px; }
+  max-width: 920px; }
 
 .inner-wrap-teaser {
   max-width: 750px; }
@@ -168,6 +160,16 @@ section {
 
   .col-lg-50 {
     width: 50%; } }
+.table {
+  display: table;
+  width: 100%; }
+
+.table-col {
+  display: block; }
+  @media screen and (min-width: 601px) {
+    .table-col {
+      display: table-cell; } }
+
 html {
   font-size: 16px;
   color: #4d4d4d; }
@@ -293,6 +295,32 @@ nav a {
     border-color: gray;
     text-decoration: none; }
 
+nav,
+section,
+aside,
+.col {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+#main {
+  background: white;
+  min-height: 500px; }
+
+.content-darker {
+  background: #fafafa; }
+
+.section-header {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 2em; }
+
+.section-content {
+  font-family: "Lato", "Helvetica", sans-serif; }
+
+.text-center {
+  text-align: center; }
+
 .clearfix:after {
   content: ".";
   display: block;
@@ -339,7 +367,14 @@ nav a {
 .feature-banner {
   position: relative;
   overflow: hidden;
-  background: #333; }
+  background: #333;
+  padding-top: 58px; }
+  @media screen and (min-width: 601px) {
+    .feature-banner {
+      padding-top: 70px; } }
+  @media screen and (min-width: 1025px) {
+    .feature-banner {
+      padding-top: 0; } }
 
 .feature-overlay {
   height: 90%;
@@ -364,6 +399,15 @@ nav a {
 
 .post-banner {
   height: 500px; }
+
+.map-box {
+  height: 400px; }
+  @media screen and (min-width: 601px) {
+    .map-box {
+      height: 500px; } }
+  @media screen and (min-width: 1025px) {
+    .map-box {
+      height: 600px; } }
 
 .slide {
   height: 100%;
@@ -612,3 +656,16 @@ nav a {
 
 .showHeaderShare .main-share-links {
   opacity: 1; }
+
+.count-lg {
+  font-size: 2em;
+  font-weight: bold; }
+
+.sign-stats-wrap {
+  padding: 2em 0; }
+
+.sign-stat {
+  padding: 3em 1em; }
+
+.sign-description {
+  padding: 3em; }

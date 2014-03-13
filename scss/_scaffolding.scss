@@ -62,18 +62,7 @@ header {
 	}
 }
 
-// Content
-// ------------------
-// --------------------
 
-nav,
-section,
-aside,
-.col {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;    
-	box-sizing: border-box;        
-}
 
 // Wrappers
 // ------------------
@@ -91,8 +80,7 @@ aside,
 	max-width: $max-body-width;
 }
 
-.inner-wrap-content { max-width: 800px; }
-
+.inner-wrap-content { max-width: 920px; }
 .inner-wrap-teaser {
 	max-width: 750px;
 }
@@ -166,10 +154,21 @@ section {
 	.col-lg-20 { width: 20%; }
 	.col-lg-25 { width: 25%; }
 	.col-lg-30 { width: 30%; }
-
 	.col-lg-50 { width: 50%; }
 }
 
+
+.table { 
+	display: table; 
+	width: 100%; 
+}
+.table-col { 
+	display: block;
+	@media screen and (min-width: $break_sm) {
+		display: table-cell; 
+	}
+	
+}
 
 
 
