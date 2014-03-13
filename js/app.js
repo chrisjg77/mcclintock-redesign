@@ -30,4 +30,22 @@ require(['modules/offcanvasMenu','modules/data','handlebars'], function() {
 		$('.feed').html(media_template(data));
 	}
 
+	if ( $("#blog-list").length > 0 ) {
+
+		var data = {
+			posts: [
+				{title:'An Urgent Appeal',author:'Tom McClintock',date:'March 10, 2014',teaser:'I need your help like never before. Coordinating with the Democrats, a well-funded liberal coalition is testing a new strategy to silence conservatives in California.'},
+				{title:'Committee Statement on HR 1192',author:'Tom McClintock',date:'February 26, 2014',teaser:'HR 1192 renames Mammoth Peak in Yosemite National Park in honor of Jesse Benton Freemont.'},
+				{title:'Rim Fire Emergency Salvage',author:'Tom McClintock',date:'February 6, 2014',teaser:'Last August, the Rim Fire destroyed 400 square miles of timber in the Sierra Nevada. It left behind hundreds of millions of board feet of dead timber that can still be salvaged.'},
+				{title:'HR 3964 - Sacramento-San Joaquin Valley Emergency Water Delivery Act',author:'Tom McClintock',date:'February 5, 2014',teaser:'California’s drought is NATURE’S fault. Our failure to prepare for it is OUR fault.'}
+			]
+		}
+
+		var posts_source = $("#blog-list").html();
+		var posts_template = Handlebars.compile(posts_source);
+		
+		$('.post-feed').append(posts_template(data));
+
+	}
+
 });

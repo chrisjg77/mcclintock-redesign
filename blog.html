@@ -10,6 +10,18 @@
 <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
 
+<script id='blog-list' type='text/x-handlebars-template'>
+{{#posts}}
+	<article class='feed-item'>
+		<div class='inner'>
+			<h3><a href='#'>{{title}}</a></h3>
+			<em class='meta meta-sm'>By {{author}} on {{date}}</em>
+			<div class='post-feed-teaser'><p>{{teaser}}</p></div>
+		</div>
+	</article>
+{{/posts}}
+</script>
+
 </head>
 <body class='blog-post'>
 
@@ -73,7 +85,14 @@
 
 			<div class='wrap inner-wrap-full clearfix'>
 				<div id='main' class='col col-sm-65 col-lg-60'>
-
+					<div class='post-activity lg-only-visible'>
+						<button class='post-activity-item'>
+							<i class='fa fa-comments'></i>
+						</button>
+						<button class='post-activity-item'>
+							<i class='fa fa-share-square-o'></i>
+						</button>
+					</div>
 					<article class='blog-item'>
 						<div class='inner'>
 							<div class='post-content'>
@@ -84,7 +103,7 @@
 
 								<p>Until the earth begins moving into its next ice age, we can reasonably expect it to continue to gently warm.  That will mean less water can be stored in snow packs and therefore more will need to be stored behind dams.</p>
 
-								<p>There, I just saved a billion dollars.</p>
+								<blockquote>There, I just saved a billion dollars.</blockquote>
 
 								<p>Everyone thinks that the Colorado River is the mother lode of all water in the Western United States, but the Colorado is a junior sister to the mighty Sacramento River system.  The difference is that we store 70 million acre feet of water on the Colorado and only 10 million acre feet on the Sacramento.</p>
 
@@ -117,15 +136,31 @@
 
 						</div>
 					</article>
-
 				</div>
 
 				<aside class='col col-sm-35 col-lg-40'>
 					<h3 class='aside-header'>Blog Roll</h3>
-					<section class='feed'>
-						<div style='height: 1500px;'>
-						
-						</div>
+					<section class='feed post-feed' >
+						<article class='feed-item'>
+							<div class='inner'>
+								<!-- <div class='tag tag-audio'>
+									<i class="fa fa-volume-up"></i>
+									<a href='#'>Audio</a>
+								</div> -->
+								<h3><a href='#'>FreedomWorks PAC Endorses Congressman Tom McClintock</a></h3>
+								<em class='meta meta-sm'>By Admin on February 27, 2014</em>
+								<div class='post-feed-teaser'><p>FreedomWorks PAC has endorsed Congressman Tom McClintock's re-election in a strongly worded letter.</p></div>
+								
+							</div>
+						</article>
+						<article class='feed-item viewing'>
+							<div class='viewing-marker'></div>
+							<div class='inner'>
+								<h3><a href='#'>California Water: It's the Storage</a></h3>
+								<em class='meta meta-sm'>By Tom McClintock on February 26, 2014</em>
+								<div class='post-feed-teaser'><p>Two weeks ago, President Obama visited the drought-stricken Central Valley of California. He announced his administration's response: he wants to spend another billion dollars to study climate change.</p></div>
+							</div>
+						</article>
 					</section>
 				</aside>
 

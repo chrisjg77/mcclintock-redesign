@@ -22,6 +22,17 @@ p {
 	margin-bottom: 1em;
 }
 
+blockquote {
+	font-family: $serif_font_stack; 
+	color: $blockquote_font_color;
+	border-left: 2px solid $blockquote_border_color;
+	font-style: italic;
+	line-height: 1.5em;
+	font-size: 1.7em;
+	padding: 0 1em;
+	margin: 2em 1em;
+}
+
 a {
 	font-family: $sans_font_stack;
  	text-decoration: none;
@@ -39,6 +50,20 @@ em {
 	display: block;
 }
 
+button {
+	background: none;
+	border: none;
+	outline: none;
+	width: $icon_default_size;
+	height: $icon_default_size;
+	cursor: pointer;
+	opacity: 0.5;
+	@include transition(opacity,0.5s,0);
+}
+
+button:hover,
+button:focus { opacity: 1; }
+
 sub {
 	font-size: 0.7em;
 }
@@ -47,7 +72,7 @@ h1,h2,h3,h4,h5,h6 {
 	font-family: $sans_font_stack; 
 	font-style: normal;
 	font-weight: normal;
-	line-height: 1.2;
+	line-height: 1.3;
 	color: $header_font_color;
 	margin: 0.75em 0 0.25em;
 }

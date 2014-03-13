@@ -22,12 +22,17 @@ define(['jquery'],function( $ ) {
 	});
 
 	$(window).on('scroll',function() {
-		if ( $(this).scrollTop() > 150 ) {
+
+		var window_scroll = $(this).scrollTop();
+
+		if ( window_scroll > 150 ) {
 			body.addClass('showHeaderShare');
 		}
 		else {
 			body.removeClass('showHeaderShare');
 		}
+
+
 	});
 	
 });

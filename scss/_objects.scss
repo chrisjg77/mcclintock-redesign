@@ -115,9 +115,40 @@
 }
 
 .feed-item {
+	position: relative;
 	@media screen and (min-width: $break_sm) {
 		border: none;
 	}
+}
+
+.feed-item:hover {
+	background: $feed_item_hover_bg;
+}
+
+.post-feed-teaser {
+	font-size: 0.75em;
+	margin: 1.25em 0 1em;
+	color: $teaser_font_color;
+}
+
+.viewing-marker {
+	width: $viewing_marker_size;
+	height: $viewing_marker_size;
+	left: -$viewing_marker_size+9px;
+	top: 47%;
+	position: absolute;
+	display: block;
+	border-left: $thin_grey_border;
+	border-bottom: $thin_grey_border;
+	background: $viewing_bg_color;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.viewing,
+.viewing:hover {
+	background: $viewing_bg_color;
 }
 
 .feed-item .inner {
@@ -126,7 +157,6 @@
 		border-bottom: $thin_light_border;
 	}
 }
-
 
 .tag { display: table; }
 .tag > * {
@@ -202,23 +232,23 @@
 	opacity: 0;
 	a { color: $main_nav_link_color; }
 	i { margin: 0 0.5em; }
-	@include transition(all,0.175s,0);
+	@include transition(opacity,0.175s,0);
 	@media screen and (min-width: $break_sm) {
 		top: 22px;
 		left: 25px;
 	}
-
-	
 }
-
 
 // Blog Post
 // ---------------------------
 
 .post-title-wrap {
 	position: absolute;
-	margin: 0 $post-header-padding;
-	bottom: $post-header-padding+1em;
+	bottom: $post_header_padding_bottom;
+	margin: 0 1.5em;
+	@media screen and (min-width: $break_lg) {
+		margin: 0 $post_header_padding_left;
+	}
 }
 .post-title {
 	color: #fff;
@@ -237,8 +267,30 @@
 
 .post-content {
 	margin-top: 2em;
-	padding-right: $post-content-padding;
 	padding-bottom: 2em;
+	@media screen and (min-width: $break_lg) {
+		margin-right: $post_content_padding_right;
+		margin-left: $post_content_padding_left;
+	}
 }
+
+.post-activity {
+	position: fixed;
+	margin-top: 4em;
+}
+
+.post-activity-item {
+	width: $icon_lg_size;
+	height: $icon_lg_size;
+	display: block;
+	margin: 1em 1.5em;
+	font-size: 1em;
+	opacity: 0.3;
+	@media screen and (min-width: $break_xl) {
+		margin-left: 1em;
+	}
+}
+
+
 
 
