@@ -1,10 +1,9 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
-@import url("http://fonts.googleapis.com/css?family=Alegreya:400,700");
 /* Tom McClintock Webste Resign (Prototype) 
  * Author: Chris Griffith
  * URL: chrisjg77.github.com/mcclintock-redesign
  */
-/* Style Guide */
+@import url("http://fonts.googleapis.com/css?family=Lato:300,400,700");
+@import url("http://fonts.googleapis.com/css?family=Lora");
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -46,7 +45,7 @@ header {
   width: 100%;
   background: white;
   height: 58px;
-  border-bottom: 1px solid #d9d9d9;
+  border-bottom: 1px solid #e6e6e6;
   text-align: center;
   position: fixed;
   z-index: 999; }
@@ -105,7 +104,7 @@ aside,
   margin: 0 auto; }
 
 article {
-  border-bottom: 1px solid #e6e6e6;
+  border-bottom: 1px solid #ebebeb;
   padding-top: 1px; }
   @media screen and (min-width: 601px) {
     article {
@@ -118,9 +117,9 @@ article > .inner {
   color: white;
   text-transform: uppercase;
   font-weight: bold;
-  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.15);
   background: silver;
-  padding: 1.25em 1em 1em;
+  padding: 1em 1em 0.75em;
   margin: 0; }
 
 .aside-header-ligher {
@@ -168,13 +167,21 @@ html {
       font-size: 18px; } }
 
 p {
-  font-family: "Alegreya", "Georgia", serif;
-  font-size: 1.1em;
+  font-family: "Lora", "Georgia", serif;
+  font-size: 1em;
   font-style: normal;
   font-weight: 100;
   line-height: 1.75;
   padding-left: 0;
   margin-bottom: 1em; }
+
+a {
+  font-family: "Lato", "Helvetica", sans-serif;
+  text-decoration: none;
+  color: #3c80af; }
+
+a:hover {
+  text-decoration: underline; }
 
 em {
   font-family: "Lato", "Helvetica", sans-serif;
@@ -193,14 +200,18 @@ h1, h2, h3, h4, h5, h6 {
   color: #343434;
   margin: 0.75em 0 0.25em; }
 
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  color: #343434; }
+
 h2 {
   font-size: 2.1em; }
 
 h3 {
-  font-size: 1.15em; }
+  font-size: 1.05em; }
 
 h4 {
-  font-size: 0.95em; }
+  font-size: 0.95em;
+  margin-bottom: 0.5em; }
 
 nav a {
   font-family: "Lato", "Helvetica", sans-serif;
@@ -230,7 +241,8 @@ nav a {
     transition-delay: 0; }
   .main-nav-links a:hover {
     opacity: 1;
-    border-color: gray; }
+    border-color: gray;
+    text-decoration: none; }
 
 .clearfix:after {
   content: ".";
@@ -270,17 +282,17 @@ nav a {
   overflow: hidden; }
 
 .feature-overlay {
-  height: 150%;
+  height: 50%;
   width: 100%;
   position: absolute;
   bottom: 0;
-  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.55));
+  background: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.45));
   /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.55));
+  background: -o-linear-gradient(top, transparent, rgba(0, 0, 0, 0.45));
   /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.55));
+  background: -moz-linear-gradient(top, transparent, rgba(0, 0, 0, 0.45));
   /* For Firefox 3.6 to 15 */
-  background: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.55));
+  background: linear-gradient(top, transparent, rgba(0, 0, 0, 0.45));
   /* Standard syntax */ }
 
 .sliding {
@@ -303,21 +315,31 @@ nav a {
       background-position: center -200%; } }
   @media screen and (min-width: 1025px) {
     .slide {
-      background-size: 2600px auto;
-      background-position: center 170%; } }
+      background-size: 2400px auto;
+      background-position: center 130%; } }
 
 .meta {
   color: #b3b3b3;
-  font-size: 0.85em; }
+  font-size: 0.85em;
+  font-weight: 300; }
+  .meta a:hover {
+    text-decoration: none; }
 
 .meta-sm {
   font-size: 0.75em; }
 
 .meta-activity {
-  max-width: 175px; }
+  max-width: 175px;
+  padding-bottom: 1em; }
   @media screen and (min-width: 601px) {
     .meta-activity {
-      border-bottom: 1px solid #e6e6e6; } }
+      border-bottom: 1px solid #ebebeb; } }
+  .meta-activity a {
+    color: #b3b3b3; }
+  .meta-activity i {
+    font-size: 1.2em; }
+  .meta-activity span {
+    margin: 0 1em 0 0.5em; }
 
 .blog-item:first-child {
   padding-top: 1em; }
@@ -325,25 +347,56 @@ nav a {
 .teaser {
   color: gray;
   margin: 2em 0; }
+  .teaser p {
+    font-size: 0.9em; }
 
 .feed {
-  border-left: 1px solid #d9d9d9;
-  border-right: 1px solid #d9d9d9; }
+  border-left: 1px solid #e6e6e6;
+  border-right: 1px solid #e6e6e6; }
 
 @media screen and (min-width: 601px) {
   .feed-item {
     border: none; } }
 
 .feed-item .inner {
-  padding: 1em 1.5em 1.4em 1em; }
+  padding: 1.5em 1.5em 1.4em 1em; }
   @media screen and (min-width: 601px) {
     .feed-item .inner {
-      border-bottom: 1px solid #e6e6e6; } }
+      border-bottom: 1px solid #ebebeb; } }
+
+.tag {
+  display: table; }
+
+.tag > * {
+  background: #ccc;
+  text-transform: uppercase;
+  vertical-align: middle;
+  text-align: center;
+  width: auto;
+  padding: 0 0.35em;
+  height: 22px;
+  min-width: 1em;
+  color: #fff;
+  display: table-cell !important; }
+
+.tag i {
+  font-size: 14px; }
+.tag a {
+  border-left: 1px solid #fff;
+  font-size: 11px;
+  padding: 0 0.75em; }
+.tag a:hover {
+  text-decoration: none; }
+
+.tag-audio > * {
+  background: #245277; }
+
+.tag-video > * {
+  background: #bc4b4b; }
 
 .icon {
-  width: 30px;
-  height: 30px;
-  background: #333;
+  width: 25px;
+  height: 25px;
   border: none;
   font-size: 0;
   outline: none; }
@@ -354,11 +407,11 @@ nav a {
 
 .main-nav-handle-wrap {
   position: absolute;
-  top: 13px;
+  top: 15px;
   right: 15px; }
   @media screen and (min-width: 601px) {
     .main-nav-handle-wrap {
-      top: 20px;
+      top: 25px;
       right: 25px; } }
 
 .main-nav-handle {

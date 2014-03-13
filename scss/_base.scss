@@ -1,3 +1,7 @@
+// Base styles 
+// -------------------------------------------
+// Styles the semantic markup and helper classes such as clearfix. Also includes
+// styles for the main nav links
 
 html {
 	font-size: $mobile_font_size;
@@ -10,12 +14,22 @@ html {
 
 p { 
 	font-family: $serif_font_stack; 
-	font-size: 1.1em;
+	font-size: 1em;
 	font-style: normal;
 	font-weight: 100;
 	line-height: 1.75;
 	padding-left: $font_indent;
 	margin-bottom: 1em;
+}
+
+a {
+	font-family: $sans_font_stack;
+ 	text-decoration: none;
+ 	color: $body_link_color;
+}
+
+a:hover {
+	text-decoration: underline;
 }
 
 em {
@@ -38,9 +52,11 @@ h1,h2,h3,h4,h5,h6 {
 	margin: 0.75em 0 0.25em;
 }
 
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { color: $header_font_color; }
+
 h2 { font-size: 2.1em; }
-h3 { font-size: 1.15em; }
-h4 { font-size: 0.95em; }
+h3 { font-size: 1.05em; }
+h4 { font-size: 0.95em; margin-bottom: 0.5em; }
 
 
 // Main Nav
@@ -70,6 +86,7 @@ nav a {
 	a:hover {
 		opacity: 1;
 		border-color: $border_top_active;
+		text-decoration: none;
 	}
 }
 

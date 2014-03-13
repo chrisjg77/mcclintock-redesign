@@ -1,5 +1,7 @@
-/* Style Guide */
-
+// Settings 
+// -------------------------------------------
+// Settings instantiates and defines global variables such as mobile breakpoints,
+// colors, and sizes of common elements.
 
 // Mobile Breakpoints
 // -------------
@@ -20,10 +22,10 @@ $mobile_font_size: 16px;
 // Font stacks and styling
 // -------------
 $sans_font_stack: "Lato","Helvetica",sans-serif;
-$serif_font_stack: "Alegreya","Georgia",serif;
+$serif_font_stack: "Lora","Georgia",serif;
 
 $font_indent: 0; // Small indent for paragraphs and em
-$text-shadow: 1px 1px 0px rgba(0,0,0,0.25);
+$text-shadow: 1px 1px 0px rgba(0,0,0,0.15);
 
 
 // Main Colors
@@ -41,6 +43,10 @@ $meta_font_color: lighten(#4d4d4d,40%);
 $teaser_font_color: lighten(#4d4d4d,20%);
 
 $main_nav_link_color: lighten(#4d4d4d,10%);
+$body_link_color: #3c80af;
+
+$audio_tag_color: #245277;
+$video_tag_color: #bc4b4b;
 
 
 // Components
@@ -72,7 +78,7 @@ $offcanvas_sm_w: 350px;
 // -- Feature graphic and slider settings
 $feature_lg_h: 450px;
 $feature_overlay_start: rgba(0,0,0,0.0);
-$feature_overlay_end: rgba(0,0,0,0.55);
+$feature_overlay_end: rgba(0,0,0,0.45);
 
 // -- Aside
 $aside_header_font_color: #fff;
@@ -82,11 +88,11 @@ $aside_body_bg: lighten(#4d4d4d,68%);
 $aside_gutter_w: 1em;
 
 
-$thin_grey_border: 1px solid lighten(#4d4d4d,55%);
-$thin_light_border: 1px solid lighten(#4d4d4d,60%);
+$thin_grey_border: 1px solid lighten(#4d4d4d,60%);
+$thin_light_border: 1px solid lighten(#4d4d4d,62%);
 
 // -- Icons
-$icon_default_size: 30px;
+$icon_default_size: 25px;
 
 
 

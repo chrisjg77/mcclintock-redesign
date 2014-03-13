@@ -2,10 +2,29 @@
 <html lang='en-US'>
 <head>
 
-
 <title>Tom McClintock for Congress</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
 <link rel='stylesheet' href='css/app.css' type='text/css'>
+
+<!-- Fontawesome: For prototyping only -->
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+
+<script id='media-list' type='text/x-handlebars-template'>
+{{#media}}
+<article class='feed-item'>
+	<div class='inner'>
+		<div class='tag tag-{{type}}'>
+			<i class="fa {{icon}}"></i>
+			<a href='#'>{{type}}</a>
+		</div>
+		<h4><a href='#'>{{title}}</a></h4>
+		<em class='meta meta-sm'>{{date}}</em>
+	</div>
+</article>
+{{/media}}
+</script>
+
 
 </head>
 <body>
@@ -17,7 +36,6 @@
 	<div class='ui-slide'>
 
 		<header>
-
 			<nav class='main-nav main-nav-left lg-only-visible'>
 				<ul class='main-nav-links'>
 					<li><a href='#'>Meet Tom</a></li>
@@ -26,11 +44,9 @@
 					<li><a href='#'>4<sub>th</sub> District</a></li>
 				</ul>
 			</nav>
-
 			<div class='site-brand'>
 				<a href='/'><img src='img/mc-site-logo.svg' /></a>
 			</div>
-
 			<nav class='main-nav main-nav-right lg-only-visible'>
 				<ul class='main-nav-links'>
 					<li><a href='#'>Blog</a></li>
@@ -39,11 +55,9 @@
 					<li><a href='#'>Contribute</a></li>
 				</ul>
 			</nav>
-
 			<div class='main-nav-handle-wrap'>
 				<button class='icon icon-bars main-nav-handle lg-hidden' id='menuHandle'>Menu</button>
 			</div>
-
 		</header>
 
 		<div id='outer-content-wrap'>
@@ -63,13 +77,16 @@
 
 						<article class='blog-item'>
 							<div class='inner'>
-								<h2>California Water: It's the Storage</h2>
+								<h2><a href='#'>California Water: It's the Storage</a></h2>
 								<em class='meta meta-md'>By Tom McClintock on February 26, 2014</em>
 								<div class='teaser'>
 									<p>Two weeks ago, President Obama visited the drought-stricken Central Valley of California.  He announced his administration's response: he wants to spend another billion dollars to study climate change.</p>
 									<p>Here's a bulletin to those who missed the Holocene Epoch.  The planet has been warming - on and off - since the last ice age, when glaciers covered much of North America.  The climate has been changing since the planet formed, often much more abruptly than it has in recent centuries. </p>
 								</div>
-								<em class='meta meta-activity'></em>
+								<em class='meta meta-activity'>
+									<a href='#'><i class="fa fa-comments"></i><span class='count'>7</span></a>
+									<a href='#'><i class="fa fa-share-square-o"></i><span class='count'>1,275</span></a>
+								</em>
 							</div>
 						</article>
 
@@ -80,7 +97,11 @@
 								<div class='teaser'>
 									<p>The great irony of the Republican decision to bust the budget sequester is that barely two months ago, congressional roles were reversed.  The Democrats insisted on funding the government according to existing law.  The Republicans sought one simple change: that the individual insurance mandate under Obamacare be delayed for one year.  They were trying to spare the American people the Obamacare disaster that is now unfolding, but to no avail.  The American people sided overwhelmingly with the Democrats on the principle that the government should be funded according to current law without any side issues.</p>
 								</div>
-							<div class='inner'>
+								<em class='meta meta-activity'>
+									<a href='#'><i class="fa fa-comments"></i><span class='count'>15</span></a>
+									<a href='#'><i class="fa fa-share-square-o"></i><span class='count'>4,523</span></a>
+								</em>
+							</div>
 						</article>
 					</div>
 				</div>
@@ -89,23 +110,26 @@
 					<h3 class='aside-header'>Media</h3>
 					<section class='feed'>
 						<div style='height: 1500px;'>
-
 							<article class='feed-item'>
 								<div class='inner'>
-									<h4>A free market depends on everyone having equal access</h4>
-									<br>
+									<div class='tag tag-audio'>
+										<i class="fa fa-volume-up"></i>
+										<a href='#'>Audio</a>
+									</div>
+									<h4><a href='#'>A free market depends on everyone having equal access</a></h4>
 									<em class='meta meta-sm'>February 27, 2014</em>
 								</div>
 							</article>
-
 							<article class='feed-item'>
 								<div class='inner'>
-									<h4>Administration's treatment of journalists "absolutely chilling"</h4>
-									<br>
+									<div class='tag tag-audio'>
+										<i class="fa fa-volume-up"></i>
+										<a href='#'>Audio</a>
+									</div>
+									<h4><a href='#'>Administration's treatment of journalists "absolutely chilling"</a></h4>
 									<em class='meta meta-sm'>February 26, 2014</em>
 								</div>
 							</article>
-
 						</div>
 					</section>
 				</aside>

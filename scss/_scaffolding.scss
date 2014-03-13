@@ -1,3 +1,8 @@
+// Base styles 
+// -------------------------------------------
+// Scaffolding sets up the structure of the site including header dimensions,
+// off-canvas menu, and column system.
+
 // Header
 // ------------------
 header {
@@ -111,7 +116,7 @@ aside { }
 	font-weight: bold;
 	text-shadow: $text-shadow;
 	background: $aside_header_bg;
-	padding: 1.25em $aside_gutter_w 1em;
+	padding: 1em $aside_gutter_w 0.75em;
 	margin: 0;
 }
 

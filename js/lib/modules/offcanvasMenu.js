@@ -20,4 +20,5 @@ define(['jquery'],function( $ ) {
 			body.removeClass('menuOpen');
 		}
 	});
+	
 });

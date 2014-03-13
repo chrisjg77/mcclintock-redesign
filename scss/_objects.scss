@@ -1,4 +1,8 @@
-
+// Objects
+// -------------------------------------------
+// Objects are elements that are not crucial to the structure to the site, nor are
+// a base to be built off. They are reusable elements such as tags, teasers,
+// features banners, etc..
 
 // Site logo/brand
 .site-brand {
@@ -25,7 +29,7 @@
 }
 
 .feature-overlay {
-	height: 150%;
+	height: 50%;
 	width: 100%;
 	position: absolute;
 	bottom: 0;
@@ -53,8 +57,8 @@
 		background-position: center -200%;
 	}
 	@media screen and (min-width: $break_lg) {
-		background-size: 2600px auto;
-		background-position: center 170%;
+		background-size: 2400px auto;
+		background-position: center 130%;
 	}
 
 }
@@ -66,6 +70,8 @@
 .meta {
 	color: $meta_font_color;
 	font-size: 0.85em;
+	font-weight: 300;
+	a:hover { text-decoration: none; }
 }
 
 .meta-sm {
@@ -74,10 +80,13 @@
 
 .meta-activity {
 	max-width: 175px;
-
+	padding-bottom: 1em;
 	@media screen and (min-width: $break_sm) {
 		border-bottom: $thin_light_border;
 	}
+	a { color: $meta_font_color; }
+	i { font-size: 1.2em; }
+	span { margin: 0 1em 0 0.5em; }
 	
 }
 
@@ -90,6 +99,7 @@
 .teaser {
 	color: $teaser_font_color;
 	margin: 2em 0;
+	p { font-size: 0.9em; }
 }
 
 // Feed (includes blogroll) 
@@ -108,11 +118,41 @@
 }
 
 .feed-item .inner {
-	padding: 1em $aside_gutter_w+0.5em 1.4em $aside_gutter_w;
+	padding: 1.5em $aside_gutter_w+0.5em 1.4em $aside_gutter_w;
 	@media screen and (min-width: $break_sm) {
 		border-bottom: $thin_light_border;
 	}
 }
+
+
+.tag { display: table; }
+.tag > * {
+	background: #ccc;
+	text-transform: uppercase;
+	vertical-align: middle;
+	text-align: center;
+	width: auto;
+	padding: 0 0.35em;
+	height: 22px;
+	min-width: 1em;
+	color: #fff;
+	display: table-cell !important;
+}
+
+
+
+.tag {
+	i { font-size: 14px; }
+	a {
+		border-left: 1px solid #fff;
+		font-size: 11px;
+		padding: 0 0.75em;
+	}
+	a:hover { text-decoration: none; }
+}
+
+.tag-audio > * { background: $audio_tag_color; }
+.tag-video > * { background: $video_tag_color; }
 
 
 // Icons 
@@ -120,7 +160,6 @@
 .icon {
 	width: $icon_default_size;
 	height: $icon_default_size;
-	background: #333;
 	border: none;
 	font-size: 0;
 	outline: none; // Hide default glow on focus
@@ -136,20 +175,18 @@
 
 .main-nav-handle-wrap {
 	position: absolute;
-	top: 13px;
+	top: 15px;
 	right: 15px;
 	@media screen and (min-width: $break_sm) {
-		top: 20px;
+		top: 25px;
 		right: 25px;
 	}
 }
 
 .main-nav-handle {
-	
 	display: block;
 	opacity: 0.5;
 	@include transition(all,$offcanvas_open_speed,0);
-	
 }
 
 .main-nav-handle:hover { opacity: 1; }
