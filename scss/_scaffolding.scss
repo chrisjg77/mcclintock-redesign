@@ -140,6 +140,10 @@ section {
 	width: 100%;
 }
 
+.padded {
+	.col { padding: $column_gutter; }
+}
+
 @media screen and (min-width: $break_sm) {
 	.col-sm-35 { width: 35%; }
 	.col-sm-50 { width: 50%; }
@@ -147,7 +151,15 @@ section {
 }
 
 @media screen and (min-width: $break_md) {
-	.col-sm-50 { width: 50%; }
+	.col-md-10 { width: 10%; }
+	.col-md-15 { width: 15%; }
+	.col-md-20 { width: 20%; }
+	.col-md-25 { width: 25%; }
+	.col-md-30 { width: 30%; }
+	.col-md-35 { width: 35%; }
+	.col-md-40 { width: 40%; }
+	.col-md-45 { width: 45%; }
+	.col-md-50 { width: 50%; }
 }
 
 @media screen and (min-width: $break_lg) {

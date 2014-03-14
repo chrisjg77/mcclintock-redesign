@@ -54,6 +54,8 @@ $viewing_bg_color: lighten(#4d4d4d,64%);
 $audio_tag_color: #245277;
 $video_tag_color: #bc4b4b;
 
+$facebook_color: #4a5aa2;
+
 
 // Components
 // -------------
@@ -118,6 +120,19 @@ $thin_light_border: 1px solid lighten(#4d4d4d,62%);
 $icon_default_size: 25px;
 $icon_lg_size: 35px;
 
+// -- Buttons
+$btn_default_size: 35px;
+$btn_lg_size: 45px;
+$btn_xl_size: 55px;
+
+// -- Forms
+$input_padding: 0.5em 0.5em;
+$input_bg_color: 1em;
+$input_border: 1px solid lighten(#4d4d4d,40%);
+$default_submit_color: #333;
+
+// -- Columns
+$column_gutter: 0.5em 0.25em;
 
 // Interactions
 // -------------
