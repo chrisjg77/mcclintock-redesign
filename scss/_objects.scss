@@ -27,7 +27,7 @@
 	text-align: center;	
 }
 
-// Feature graphic and slider
+// Feature graphic area, slider, and/or map
 .feature-banner {
 	position: relative;
 	overflow: hidden;
@@ -205,7 +205,6 @@
 
 
 // Icons 
-
 .icon {
 	width: $icon_default_size;
 	height: $icon_default_size;
@@ -221,7 +220,6 @@
 
 
 // -- Header objects (nav handle and share links)
-
 .main-nav-handle-wrap {
 	position: absolute;
 	top: 15px;
@@ -302,6 +300,47 @@
 	@media screen and (min-width: $break_xl) {
 		margin-left: 1em;
 	}
+}
+
+.post-activity-dropdown {
+	width: $icon_lg_size;
+	margin: 0 auto;
+	position: relative;
+	background: #000;
+	text-align: center;
+	display: table;
+	@media screen and (min-width: $break_xl) {
+		right: 5px;
+	}
+	.arrow {
+		width: 10px;
+		height: 10px;
+		margin: 0 auto;
+		background: #000;
+		position: relative;
+		display: block;
+		-webkit-transform: rotate(45deg);
+		-moz-transform: rotate(45deg);
+		transform: rotate(45deg);
+		top: -5px;
+	}
+	ul { 
+		margin-top: -5px; 
+	}
+	li {
+		a {
+			display: block;
+			display: table-cell;
+			vertical-align: middle;
+			width: $icon_lg_size;
+			height: $icon_lg_size;
+		}
+	}
+}
+
+.post-activity-dropdown-count {
+	color: #fff;
+	font-size: 0.8em;
 }
 
 
