@@ -8,7 +8,7 @@ require.config({
     }
 });
 
-require(['modules/offcanvasMenu','modules/data','handlebars'], function() {
+require(['modules/offcanvasMenu','modules/data','modules/activityLinks','handlebars'], function() {
 
 	if ( $("#media-list").length > 0 ) {
 		var data = {

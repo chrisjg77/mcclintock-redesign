@@ -256,6 +256,7 @@ button {
   -o-transition-delay: 0;
   transition-delay: 0; }
 
+button.active,
 button:hover,
 button:focus {
   opacity: 1; }
@@ -523,7 +524,19 @@ label {
   color: #b3b3b3;
   font-size: 0.85em;
   font-weight: 300; }
+  .meta a {
+    -webkit-transition: color 0.375s;
+    -moz-transition: color 0.375s;
+    -ms-transition: color 0.375s;
+    -o-transition: color 0.375s;
+    transition: color 0.375s;
+    -webkit-transition-delay: 0;
+    -moz-transition-delay: 0;
+    -ms-transition-delay: 0;
+    -o-transition-delay: 0;
+    transition-delay: 0; }
   .meta a:hover {
+    color: #666666;
     text-decoration: none; }
 
 .meta-sm {
@@ -718,7 +731,7 @@ label {
   position: absolute;
   margin-top: 4em; }
 
-.post-activity-item {
+.post-activity-handle {
   width: 35px;
   height: 35px;
   display: block;
@@ -726,10 +739,11 @@ label {
   font-size: 1em;
   opacity: 0.3; }
   @media screen and (min-width: 1281px) {
-    .post-activity-item {
+    .post-activity-handle {
       margin-left: 1em; } }
 
 .post-activity-dropdown {
+  display: none;
   width: 35px;
   margin: 0 auto;
   position: relative;
@@ -738,6 +752,7 @@ label {
   display: table; }
   @media screen and (min-width: 1281px) {
     .post-activity-dropdown {
+      display: none;
       right: 5px; } }
   .post-activity-dropdown .arrow {
     width: 10px;
@@ -752,7 +767,7 @@ label {
     top: -5px; }
   .post-activity-dropdown ul {
     margin-top: -5px; }
-  .post-activity-dropdown li a {
+  .post-activity-dropdown li a, .post-activity-dropdown li em {
     display: block;
     display: table-cell;
     vertical-align: middle;

@@ -61,6 +61,7 @@ button {
 	@include transition(opacity,0.5s,0);
 }
 
+button.active,
 button:hover,
 button:focus { opacity: 1; }
 

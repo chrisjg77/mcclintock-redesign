@@ -32,7 +32,6 @@ define(['jquery'],function( $ ) {
 			body.removeClass('showHeaderShare');
 		}
 
-
 	});
 	
 });
