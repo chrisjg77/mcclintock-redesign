@@ -19,3 +19,14 @@
 	-o-transition-delay: $delay;
 	transition-delay: $delay;
 }
+
+.facebook { background: $facebook_color; }
+.twitter { background: $twitter_color; }
+.pinterest { background: $pinterest_color; }
+.activity { background: $activity_color; }
+
+
+.facebook:hover { background: lighten($facebook_color,10%); }
+.twitter:hover { background: lighten($twitter_color,10%); }
+.pinterest:hover { background: lighten($pinterest_color,10%); }
+.activity:hover { background: lighten($activity_color,10%); }

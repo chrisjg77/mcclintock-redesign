@@ -41,6 +41,30 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+.facebook {
+  background: #4a5aa2; }
+
+.twitter {
+  background: #56a8d5; }
+
+.pinterest {
+  background: #c13030; }
+
+.activity {
+  background: #3c6480; }
+
+.facebook:hover {
+  background: #6675b9; }
+
+.twitter:hover {
+  background: #7fbddf; }
+
+.pinterest:hover {
+  background: #d45050; }
+
+.activity:hover {
+  background: #4c7fa3; }
+
 header {
   width: 100%;
   background: white;
