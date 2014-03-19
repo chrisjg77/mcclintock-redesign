@@ -315,9 +315,7 @@
 	position: relative;
 	background: #000;
 	text-align: center;
-	display: table;
 	@media screen and (min-width: $break_xl) {
-		display: none;
 		right: 5px;
 	}
 	.arrow {
@@ -333,6 +331,7 @@
 		top: -5px;
 	}
 	ul { 
+		display: table;
 		margin-top: -5px; 
 	}
 	li {

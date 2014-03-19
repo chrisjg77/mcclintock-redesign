@@ -117,7 +117,8 @@ header {
 .wrap {
   display: block;
   margin: 0 auto;
-  position: relative; }
+  position: relative;
+  height: 100%; }
 
 .inner-wrap-full {
   max-width: 1280px; }
@@ -773,11 +774,9 @@ label {
   margin: 0 auto;
   position: relative;
   background: #000;
-  text-align: center;
-  display: table; }
+  text-align: center; }
   @media screen and (min-width: 1281px) {
     .post-activity-dropdown {
-      display: none;
       right: 5px; } }
   .post-activity-dropdown .arrow {
     width: 10px;
@@ -791,6 +790,7 @@ label {
     transform: rotate(45deg);
     top: -5px; }
   .post-activity-dropdown ul {
+    display: table;
     margin-top: -5px; }
   .post-activity-dropdown li a, .post-activity-dropdown li em {
     display: block;
