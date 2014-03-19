@@ -116,7 +116,8 @@ header {
 
 .wrap {
   display: block;
-  margin: 0 auto; }
+  margin: 0 auto;
+  position: relative; }
 
 .inner-wrap-full {
   max-width: 1280px; }
