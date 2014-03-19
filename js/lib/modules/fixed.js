@@ -1,9 +1,5 @@
 define(['jquery'],function( $ ) {
-
-
 	$(window).on('scroll',function() {
-
-
 		var pos_top = $('#main').offset().top,
 			scroll_top = $(this).scrollTop();
 
@@ -20,10 +16,5 @@ define(['jquery'],function( $ ) {
 				'top':0
 			});
 		}
-
-
-
 	});
-
-
 });
