@@ -685,8 +685,8 @@ label {
 .icon {
   width: 25px;
   height: 25px;
+  font-size: 1.2em;
   border: none;
-  font-size: 0;
   outline: none;
   position: relative;
   top: 3px; }
@@ -791,12 +791,22 @@ label {
       margin-left: 1em; } }
 
 .post-activity-dropdown {
-  display: none;
   width: 35px;
-  margin: 0 auto;
+  margin: -15px auto 0;
   position: relative;
-  background: #000;
-  text-align: center; }
+  text-align: center;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: all 0.375s;
+  -moz-transition: all 0.375s;
+  -ms-transition: all 0.375s;
+  -o-transition: all 0.375s;
+  transition: all 0.375s;
+  -webkit-transition-delay: 0;
+  -moz-transition-delay: 0;
+  -ms-transition-delay: 0;
+  -o-transition-delay: 0;
+  transition-delay: 0; }
   @media screen and (min-width: 1281px) {
     .post-activity-dropdown {
       right: 5px; } }
@@ -810,19 +820,24 @@ label {
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     transform: rotate(45deg);
-    top: -5px; }
+    top: 5px; }
   .post-activity-dropdown ul {
     display: table;
-    margin-top: -5px; }
+    margin-top: 0; }
   .post-activity-dropdown li a, .post-activity-dropdown li em {
+    color: #fff;
     display: block;
     display: table-cell;
     vertical-align: middle;
     width: 35px;
     height: 35px; }
 
+.post-activity-dropdown.expanded {
+  max-height: 1000px; }
+
 .post-activity-dropdown-count {
   color: #fff;
+  background: #000;
   font-size: 0.8em; }
 
 .ui-slide {

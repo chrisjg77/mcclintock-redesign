@@ -216,8 +216,8 @@
 .icon {
 	width: $icon_default_size;
 	height: $icon_default_size;
+	font-size: 1.2em;
 	border: none;
-	font-size: 0;
 	outline: none; // Hide default glow on focus
 	position: relative;
 	top: 3px;
@@ -313,15 +313,16 @@
 }
 
 .post-activity-dropdown {
-	display: none;
 	width: $icon_lg_size;
-	margin: 0 auto;
+	margin: -15px auto 0;
 	position: relative;
-	background: #000;
 	text-align: center;
+	max-height: 0;
+	overflow: hidden;
 	@media screen and (min-width: $break_xl) {
 		right: 5px;
 	}
+	@include transition(all,0.375s,0);
 	.arrow {
 		width: 10px;
 		height: 10px;
@@ -332,14 +333,15 @@
 		-webkit-transform: rotate(45deg);
 		-moz-transform: rotate(45deg);
 		transform: rotate(45deg);
-		top: -5px;
+		top: 5px;
 	}
 	ul { 
 		display: table;
-		margin-top: -5px; 
+		margin-top: 0; 
 	}
 	li {
 		a,em {
+			color: #fff;
 			display: block;
 			display: table-cell;
 			vertical-align: middle;
@@ -349,8 +351,13 @@
 	}
 }
 
+.post-activity-dropdown.expanded {
+	max-height: 1000px;
+}
+
 .post-activity-dropdown-count {
 	color: #fff;
+	background: #000;
 	font-size: 0.8em;
 }
 

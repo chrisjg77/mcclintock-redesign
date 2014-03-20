@@ -5,13 +5,13 @@ define(['jquery'],function( $ ) {
 
 	$(document).on('mouseover','.post-activity-item',function() {
 		$('.post-activity-handle',this).addClass('active');
-		$('.post-activity-dropdown',this).stop().fadeIn(500);
+		$('.post-activity-dropdown',this).addClass('expanded');
 
 	});
 
 	$(document).on('mouseout','.post-activity-item',function() {
 		$('.post-activity-handle',this).removeClass('active');
-		$('.post-activity-dropdown',this).stop().fadeOut(500);
+		$('.post-activity-dropdown',this).removeClass('expanded');
 	});
 
 });
