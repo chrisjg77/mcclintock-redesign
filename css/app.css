@@ -110,6 +110,9 @@ header {
   @media screen and (min-width: 601px) {
     .off-canvas {
       width: 350px; } }
+  @media screen and (min-width: 1025px) {
+    .off-canvas {
+      display: none; } }
 
 #outer-content-wrap {
   background: white; }
@@ -136,6 +139,11 @@ article {
     article {
       border: none; } }
 
+article:last-child {
+  border: none; }
+  article:last-child .meta-activity {
+    border: none; }
+
 article > .inner {
   padding: 0 2.5em 0 2em; }
 
@@ -157,6 +165,10 @@ article > .inner {
 
 section {
   width: 100%; }
+
+footer {
+  background: #333333;
+  min-height: 400px; }
 
 .col {
   float: left;
@@ -291,7 +303,7 @@ button:focus {
   background: #333;
   color: #fff;
   display: inline-block;
-  height: 35px;
+  padding: 0.75em 1em 1em;
   font-size: 1em;
   font-weight: 300;
   -webkit-transition: background 0.375s;
@@ -407,7 +419,8 @@ textarea,
 
 #main {
   background: white;
-  min-height: 500px; }
+  min-height: 500px;
+  padding-bottom: 2em; }
 
 .content-darker {
   background: #fafafa; }
@@ -430,6 +443,10 @@ textarea,
   visibility: hidden;
   line-height: 0;
   height: 0; }
+
+@media screen and (min-width: 1025px) {
+  .flex-lg {
+    display: flex; } }
 
 @media screen and (min-width: 1025px) {
   .lg-hidden {
@@ -595,7 +612,10 @@ label {
   border-right: 1px solid #e6e6e6; }
 
 .feed-item {
-  position: relative; }
+  position: relative;
+  cursor: pointer; }
+  .feed-item a:hover {
+    text-decoration: none; }
   @media screen and (min-width: 601px) {
     .feed-item {
       border: none; } }
@@ -641,8 +661,8 @@ label {
   vertical-align: middle;
   text-align: center;
   width: auto;
-  padding: 0 0.35em;
-  height: 22px;
+  padding: 0 0.45em;
+  height: 20px;
   min-width: 1em;
   color: #fff;
   display: table-cell !important; }

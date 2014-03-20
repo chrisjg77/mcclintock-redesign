@@ -69,7 +69,8 @@ button:focus { opacity: 1; }
 	background: #333;
 	color: #fff;
 	display: inline-block;
-	height: $btn_default_size;
+	// height: $btn_default_size;
+	padding: 0.75em 1em 1em;
 	font-size: 1em;
 	font-weight: 300;
 	@include transition(background,0.375s,0);
@@ -167,6 +168,7 @@ textarea,
 #main {
 	background: $main_body_bg;
 	min-height: 500px;
+	padding-bottom: 2em;
 }
 
 .content-darker { background: $content_body_darker_bg; }
@@ -184,6 +186,12 @@ textarea,
 	visibility: hidden;
 	line-height: 0;
 	height:0;
+}
+
+.flex-lg {
+	@media screen and (min-width: $break_lg) {
+		display: flex;
+	}
 }
 
 .lg-hidden {

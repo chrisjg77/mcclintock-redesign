@@ -60,6 +60,9 @@ header {
 	@media screen and (min-width: $break_sm) {
 		width: $offcanvas_sm_w;
 	}
+	@media screen and (min-width: $break_lg) {
+		display: none;
+	}
 }
 
 
@@ -91,13 +94,16 @@ header {
 // Articles
 // ------------------
 article {
-
 	border-bottom: $thin_light_border;
 	padding-top: 1px;
-
 	@media screen and (min-width: $break-sm) {
 		border: none;
 	}
+}
+
+article:last-child {
+	border: none;
+	.meta-activity { border: none; }
 }
 
 article > .inner {
@@ -132,7 +138,12 @@ section {
 	width: 100%;
 }
 
-
+// Footer
+// ------------------
+footer {
+	background: $footer_bg_color;
+	min-height: 400px;
+}
 
 // Column system
 // -------------------

@@ -27,7 +27,7 @@ require(['modules/offcanvasMenu','modules/data','modules/activityLinks','modules
 		var media_source = $("#media-list").html();
 		var media_template = Handlebars.compile(media_source);
 		
-		$('.feed').html(media_template(data));
+		$('.feed section').html(media_template(data));
 	}
 
 	if ( $("#blog-list").length > 0 ) {

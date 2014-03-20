@@ -138,6 +138,8 @@
 
 .feed-item {
 	position: relative;
+	cursor: pointer;
+	a:hover { text-decoration: none; }
 	@media screen and (min-width: $break_sm) {
 		border: none;
 	}
@@ -187,8 +189,8 @@
 	vertical-align: middle;
 	text-align: center;
 	width: auto;
-	padding: 0 0.35em;
-	height: 22px;
+	padding: 0 0.45em;
+	height: 20px;
 	min-width: 1em;
 	color: #fff;
 	display: table-cell !important;
