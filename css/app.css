@@ -407,7 +407,42 @@ nav a {
     border-color: gray;
     text-decoration: none; }
 
+.mobile-nav-links {
+  font-size: 1em;
+  font-weight: 300;
+  padding: 1em 0;
+  margin-left: 5em;
+  -webkit-transition: all 0.357s;
+  -moz-transition: all 0.357s;
+  -ms-transition: all 0.357s;
+  -o-transition: all 0.357s;
+  transition: all 0.357s;
+  -webkit-transition-delay: 0;
+  -moz-transition-delay: 0;
+  -ms-transition-delay: 0;
+  -o-transition-delay: 0;
+  transition-delay: 0; }
+  .mobile-nav-links a {
+    display: block;
+    width: 100%;
+    padding: 1em 2em;
+    color: gray;
+    -webkit-transition: all 0.375s;
+    -moz-transition: all 0.375s;
+    -ms-transition: all 0.375s;
+    -o-transition: all 0.375s;
+    transition: all 0.375s;
+    -webkit-transition-delay: 0;
+    -moz-transition-delay: 0;
+    -ms-transition-delay: 0;
+    -o-transition-delay: 0;
+    transition-delay: 0; }
+  .mobile-nav-links a:hover {
+    text-decoration: none;
+    color: #cccccc; }
+
 nav,
+nav a,
 section,
 aside,
 input,
@@ -840,6 +875,28 @@ label {
   background: #000;
   font-size: 0.8em; }
 
+.search-bar {
+  width: 100%;
+  background: #000;
+  height: 58px;
+  position: relative; }
+  @media screen and (min-width: 601px) {
+    .search-bar {
+      height: 70px; } }
+
+.search-bar-input {
+  padding: 0.8em 1em;
+  background: none;
+  position: absolute;
+  top: 0;
+  font-size: 1.25em;
+  color: #b3b3b3;
+  border: none;
+  outline: none; }
+  @media screen and (min-width: 601px) {
+    .search-bar-input {
+      padding: 0.95em 1em 0.85em; } }
+
 .ui-slide {
   width: 100%;
   position: relative;
@@ -864,9 +921,14 @@ label {
   -webkit-transform: rotate(-90deg);
   -moz-transform: rotate(-90deg);
   transform: rotate(-90deg); }
+.menuOpen .mobile-nav-links {
+  margin-left: 0; }
 
 .showHeaderShare .main-share-links {
   opacity: 1; }
+
+.searchActive .mobile-nav-links {
+  margin-left: -100%; }
 
 @font-face {
   font-family: "mcclintock";

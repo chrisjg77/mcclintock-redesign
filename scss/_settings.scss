@@ -61,8 +61,9 @@ $pinterest_color: #c13030;
 $activity_color: #3c6480;
 
 // Components
-// -------------
-// Components include high level sections such as the body, header, content, aside, etc..
+// ----------------------------------------------------------------------------
+// Components include high level sections such as the body, header, content, 
+// aside, etc..
  
 // -- Wrappers
 $max-body-width: 1280px;
@@ -88,6 +89,9 @@ $border_top_active: lighten(#4d4d4d,20%);
 $offcanvas_bg_color: darken(#4d4d4d,18%);
 $offcanvas_xs_w: 80%;
 $offcanvas_sm_w: 350px;
+
+$mobile_nav_links_color: lighten(#4d4d4d,20%);
+$mobile_nav_links_color_hover: lighten(#4d4d4d,50%);
 
 // -- Feature graphic and slider settings
 $feature_lg_h: 450px;
@@ -133,6 +137,9 @@ $input_padding: 0.5em 0.5em;
 $input_bg_color: 1em;
 $input_border: 1px solid lighten(#4d4d4d,40%);
 $default_submit_color: #333;
+
+// -- Offcanvas Search
+$side_search_font_color: lighten(#4d4d4d,40%);
 
 // -- Columns
 $column_gutter: 0.5em 0.25em;

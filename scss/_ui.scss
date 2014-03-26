@@ -8,7 +8,6 @@
 	@include transition(margin,$offcanvas_open_speed,0);
 }
 
-
 .menuOpen {
 
 	.ui-slide {
@@ -23,6 +22,10 @@
 		-moz-transform: rotate(-90deg);
 		transform: rotate(-90deg);
 	}
+
+	.mobile-nav-links {
+		margin-left: 0;
+	}
 	
 }
 
@@ -32,5 +35,14 @@
 	.main-share-links {
 		opacity: 1;
 	}
+
+}
+
+.searchActive {
+
+	.mobile-nav-links {
+		margin-left: -100%;
+	}
+
 
 }

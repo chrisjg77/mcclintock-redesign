@@ -5,6 +5,7 @@
 // features banners, etc..
 
 // Site logo/brand
+// ----------------------------------------------------------------------------
 .site-brand {
 	width: $brand_sm_size;
 	margin: 0 auto;
@@ -28,6 +29,7 @@
 }
 
 // Feature graphic area, slider, and/or map
+// ----------------------------------------------------------------------------
 .feature-banner {
 	position: relative;
 	overflow: hidden;
@@ -85,7 +87,7 @@
 
 
 // Meta Information
-// ---------------------------
+// ----------------------------------------------------------------------------
 // Includes bylines, dates, comment and share numbers and links
 .meta {
 	color: $meta_font_color;
@@ -116,7 +118,7 @@
 }
 
 // Blog Post List
-// ---------------------------
+// ----------------------------------------------------------------------------
 .blog-item:first-child {
 	padding-top: 1em;
 }
@@ -128,7 +130,7 @@
 }
 
 // Feed (includes blogroll) 
-// ---------------------------
+// ----------------------------------------------------------------------------
 // The feed shows related/upcoming comment to the right of the main content
 // on the page.
 .feed {
@@ -213,6 +215,7 @@
 
 
 // Icons 
+// ----------------------------------------------------------------------------
 .icon {
 	width: $icon_default_size;
 	height: $icon_default_size;
@@ -264,8 +267,7 @@
 }
 
 // Blog Post
-// ---------------------------
-
+// ----------------------------------------------------------------------------
 .post-title-wrap {
 	position: absolute;
 	bottom: $post_header_padding_bottom;
@@ -360,6 +362,36 @@
 	background: #000;
 	font-size: 0.8em;
 }
+
+// Search 
+// ----------------------------------------------------------------------------
+.search-bar {
+	width: 100%;
+	background: #000;
+	height: $header_phone_h;
+	position: relative;
+	@media screen and (min-width: $break_sm) {
+		height: $header_tablet_h;
+	}
+}
+
+.search-bar-input {
+	padding: 0.8em 1em;
+	background: none;
+	position: absolute;
+	top: 0;
+	font-size: 1.25em;
+	color: $side_search_font_color;
+	border: none;
+	outline: none;
+	@media screen and (min-width: $break_sm) {
+		padding: 0.95em 1em 0.85em;
+	}
+}
+
+
+
+
 
 
 

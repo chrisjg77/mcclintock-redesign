@@ -116,7 +116,7 @@ h4 { font-size: 0.95em; margin-bottom: 0.5em; }
 
 
 // Main Nav
-// ------------
+// ----------------------------------------------------------------------------
 nav a {
 	font-family: $sans_font_stack;
 	text-transform: uppercase;
@@ -150,11 +150,30 @@ nav a {
 	}
 }
 
+.mobile-nav-links {
+	font-size: 1em;
+	font-weight: 300;
+	padding: 1em 0;
+	margin-left: 5em;
+	@include transition(all,0.357s,0);
+	a {
+		display: block;
+		width: 100%;
+		padding: 1em 2em;
+		color: $mobile_nav_links_color;
+		@include transition(all,0.375s,0);
+	}
+	a:hover {
+		text-decoration: none;
+		color: $mobile_nav_links_color_hover;
+	}
+}
+
 // Content
-// ------------------
-// --------------------
+// ----------------------------------------------------------------------------
 
 nav,
+nav a,
 section,
 aside,
 input,
@@ -217,7 +236,7 @@ textarea,
 
 
 // Forms
-// ------------------
+// ----------------------------------------------------------------------------
 
 input,
 label { 
